@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import logo from '~/assets/images/logo.png'
+
 const { awesome } = useAppConfig()
 const { parseMenuRoute, parseMenuTitle } = useNavbarParser()
 const $screen = useAwesomeScreen()
@@ -16,7 +18,7 @@ const showDrawer = ref(false)
 
 <template>
   <header
-    class="flex fixed backdrop-filter backdrop-blur-md top-0 z-40 w-full flex-none transition-colors duration-300 lg:z-50 border-b border-gray-950/10 dark:border-gray-50/[0.2] bg-white/[0.5] dark:bg-gray-950/[0.5]"
+    class="flex fixed  top-0 z-40 w-full flex-none transition-colors duration-300 lg:z-50  border-gray-950/10 dark:border-gray-50/[0.2] bg-[#000000]/[0.27] dark:bg-gray-950/[0.5]"
   >
     <!-- content -->
     <div
@@ -25,21 +27,28 @@ const showDrawer = ref(false)
       <!-- title -->
       <div>
         <slot name="title">
-          <NuxtLink to="/" class="font-bold text-lg text-primary-500">
-            <Icon
-              name="simple-icons:nuxtdotjs"
-              class="font-black text-xl font-mono mr-2 inline-block"
-            />
-            <span class="capitalize">{{ awesome.name }}</span>
+          <NuxtLink to="/" >
+            <div class="flex   justify-center items-center  gap-[8px] h-[108px]">
+            <img :src="logo" alt="logo" class="h-[74px] w-[107px]" />
+            
+            <div class="flex flex-col text-white  text-[30px] font-normal border-l  border-white pl-[8px] ">
+              <span>发展科技</span>
+              <span>服务致远</span>
+            </div>
+          </div>
           </NuxtLink>
+
         </slot>
       </div>
       <!-- menus -->
       <div
         v-if="$screen.higherThan('md', $screen.current.value)"
-        class="flex space-x-4 items-center"
+        class="flex gap-[17px]  flex-col space-x-4 items-center"
         :class="{ 'divide-x divide-gray-500': menus.length > 0 }"
       >
+      <div class="w-[137px] h-[24px] text-[18px]  font-bold  text-white">
+        400-888-8888
+      </div>
         <div class="flex space-x-4 text-sm items-center">
           <!-- dynamic menus -->
           <template v-for="(item, i) in menus" :key="i">
@@ -47,20 +56,7 @@ const showDrawer = ref(false)
           </template>
         </div>
         <!-- others -->
-        <div class="pl-4 flex space-x-3 text-xl">
-          <!-- todo: feat/localization -->
-          <!-- <AwesomeLink class="text-gray-400 hover:text-gray-100">
-            <Icon name="la:language" />
-          </AwesomeLink> -->
-          <LayoutPageNavbarDropdownThemeSwitcher />
-          <AwesomeLink
-            v-if="awesome?.project?.links?.github"
-            class="dark:text-gray-400 text-gray-600"
-            :href="awesome?.project?.links?.github"
-          >
-            <Icon name="mdi:github-face" />
-          </AwesomeLink>
-        </div>
+      
       </div>
       <!-- drawer:btn -->
       <div

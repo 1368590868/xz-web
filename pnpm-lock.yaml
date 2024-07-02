@@ -91,7 +91,7 @@ importers:
   .demo:
     devDependencies:
       '@nuxt-awesome/theme':
-        specifier: 2.0.9
+        specifier: latest
         version: link:..
       nuxt:
         specifier: latest

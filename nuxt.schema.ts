@@ -4,6 +4,7 @@ export default defineNuxtSchema({
   appConfig: {
     awesome: {
       name: 'Nuxt 3 Awesome Starter',
+      phone: '400-123-4567',
       description:
         'a starter template for Nuxt 3 with minimalist themes design, built in components, drawer & menus, and more.',
       project: {

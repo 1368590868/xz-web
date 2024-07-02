@@ -21,10 +21,10 @@ const props = defineProps({
     <NuxtLink :to="parseMenuRoute(menu?.to)" #="{ isActive }">
       <div
         :class="[
-          'transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-lg w-full',
+          'text-[16px] transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-lg w-full',
           isActive
-            ? 'text-gray-900 dark:text-gray-100 font-bold'
-            : 'text-gray-700 dark:text-gray-300',
+            ? 'text-[#E7900E] dark:text-gray-100 font-bold'
+            : 'text-white dark:text-gray-300',
         ]"
       >
         {{ parseMenuTitle(menu?.title) }}
@@ -34,9 +34,10 @@ const props = defineProps({
   <template v-else-if="menu?.type === 'link'">
     <NuxtLink :to="parseMenuRoute(menu?.to)" #="{ isActive }">
       <span
+      class="text-[16px]"
         :class="{
-          'text-gray-900 dark:text-gray-100 font-bold': isActive,
-          'text-gray-700 dark:text-gray-300': !isActive,
+          'text-[#E7900E] dark:text-gray-100 font-bold': isActive,
+          'text-white dark:text-gray-300': !isActive,
         }"
         >{{ parseMenuTitle(menu?.title) }}</span
       >
