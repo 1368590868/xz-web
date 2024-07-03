@@ -27,6 +27,30 @@ const serviceText = [
 ]
 const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' },]
 
+const currentComponent = ref('A');
+const router = useRouter()
+function showComponent(component: string) {
+  currentComponent.value = component;
+}
+
+const componentText = {
+  'A': '覆盖政府、工业、科研、金融、办公、智慧城市、能源、军工、教育等50+行业',
+  'B': '人事代理、劳务派遣、薪酬服务、商业险服务、健康管理服务等',
+  'C': 'CRM客户关系系统、OA办公系统、项目管理系统、费控管理系统等类型产品解决服务',
+  'D': '业务咨询+方案定制+产品研发+项目实施一体化的综合服务'
+}
+const componentRouter = {
+  'A': '/post',
+  'B': '/service',
+  'C': '/post',
+  'D': '/'
+}
+
+function goDetail() {
+  router.push(componentRouter[currentComponent.value])
+}
+
+
 </script>
 
 <template>
@@ -67,21 +91,33 @@ const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, {
         </div>
 
         <div class="flex flex-wrap w-full">
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4  ">
+
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4  " @click="showComponent('A')">
             <img :src="xzfw1" class="w-[44px] h-[44px]" />
-            <div class="mt-5 text-[16px]  font-bold text-[#212121] ">行业方案咨询服务</div>
+            <div :class="currentComponent === 'A' ? 'text-[#0D63BE]' : 'text-[#212121]'"
+              class="mt-5 text-[16px]  font-bold  ">行业方案咨询服务 </div>
           </div>
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 ">
+
+
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('B')">
             <img :src="xzfw2" class="w-[44px] h-[44px]" />
-            <div class="mt-5  text-[16px]  font-bold text-[#212121]">行业方案咨询服务</div>
+            <div :class="currentComponent === 'B' ? 'text-[#0D63BE]' : 'text-[#212121]'"
+              class="mt-5  text-[16px]  font-bold ">人力资源解决服务</div>
           </div>
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 ">
+
+
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('C')">
             <img :src="xzfw1" class="w-[44px] h-[44px]" />
-            <div class="mt-5  text-[16px]  font-bold text-[#212121]">行业方案咨询服务</div>
+            <div :class="currentComponent === 'C' ? 'text-[#0D63BE]' : 'text-[#212121]'"
+              class="mt-5  text-[16px]  font-bold ">产品方案解决服务</div>
           </div>
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 ">
+
+
+
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('D')">
             <img :src="xzfw3" class="w-[44px] h-[44px]" />
-            <div class="mt-5  text-[16px]  font-bold text-[#212121]">行业方案咨询服务</div>
+            <div :class="currentComponent === 'D' ? 'text-[#0D63BE]' : 'text-[#212121]'"
+              class="mt-5  text-[16px]  font-bold ">行业综合服务</div>
           </div>
         </div>
 
@@ -89,9 +125,9 @@ const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, {
           <div class="xl:w-[700px] md:w-full  text-[14px] font-normal text-[#0d0d0d]  leading-6 ">
             <div class="text-[20px] text-blank font-bold  mb-[24px] text-center">服务范围</div>
             <div class="mb-[10px]">
-              覆盖政府、工业、科研、金融、办公、智慧城市、能源、军工、教育等50+行业
+              {{ componentText[currentComponent] }}
             </div>
-            <div class="align-middle cursor-pointer ">
+            <div class="align-middle cursor-pointer " @click="goDetail">
               <img class=" inline-block" :src="rightIco" />
               <span class="text-[14px] font-bold text-[#0d63be]"> 查看详情</span>
             </div>
