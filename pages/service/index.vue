@@ -41,8 +41,8 @@ const componentText = {
 }
 const componentRouter = {
   'A': '/post',
-  'B': '/service',
-  'C': '/post',
+  'B': '/rlzyfw',
+  'C': '/cpzyfw',
   'D': '/'
 }
 
