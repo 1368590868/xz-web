@@ -15,7 +15,7 @@ export default defineAppConfig({
         navbar: {
           menus: [
             { type: 'link', title: '首页', to: { path:'/' } },
-            { type: 'link', title: '行展服务', to: { name: 'post' } },
+            { type: 'link', title: '行展服务', to: { name: 'service' } },
             { type: 'link', title: '关于行展', to: { name: 'aboutMe' } },
             { type: 'link', title: '联系我们', to: { name: 'contact' } },
           ],
