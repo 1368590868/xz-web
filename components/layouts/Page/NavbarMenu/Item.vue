@@ -19,35 +19,25 @@ const props = defineProps({
 <template>
   <template v-if="menu?.type === 'link' && isDropdown">
     <NuxtLink :to="parseMenuRoute(menu?.to)" #="{ isActive }">
-      <div
-        :class="[
-          'text-[16px] transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 px-4 py-2 rounded-lg w-full',
-          isActive
-            ? 'text-[#E7900E] dark:text-gray-100 font-bold'
-            : 'text-white dark:text-gray-300',
-        ]"
-      >
+      <div :class="[
+        'text-[16px] transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-800 px-4 py-2 rounded-lg w-full',
+        isActive
+          ? 'text-[#E7900E] dark:text-gray-100 font-bold'
+          : 'text-white dark:text-gray-300',
+      ]">
         {{ parseMenuTitle(menu?.title) }}
       </div>
     </NuxtLink>
   </template>
   <template v-else-if="menu?.type === 'link'">
     <NuxtLink :to="parseMenuRoute(menu?.to)" #="{ isActive }">
-      <span
-      class="text-[16px]"
-        :class="{
-          'text-[#E7900E] dark:text-gray-100 font-bold': isActive,
-          'text-white dark:text-gray-300': !isActive,
-        }"
-        >{{ parseMenuTitle(menu?.title) }}</span
-      >
+      <span class="text-[16px]" :class="{
+        'text-[#E7900E] dark:text-gray-100 font-bold': isActive,
+        'text-white dark:text-gray-300': !isActive,
+      }">{{ parseMenuTitle(menu?.title) }}</span>
     </NuxtLink>
   </template>
   <template v-else-if="menu?.type === 'button'">
-    <AwesomeButton
-      :text="parseMenuTitle(menu?.title)"
-      size="xs"
-      :to="parseMenuRoute(menu.to)"
-    />
+    <AwesomeButton :text="parseMenuTitle(menu?.title)" size="xs" :to="parseMenuRoute(menu.to)" />
   </template>
 </template>
