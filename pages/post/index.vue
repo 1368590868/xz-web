@@ -2,53 +2,63 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: 'Posts' })
+useHead({ title: '行业方案咨询服务' })
 
-import bg1 from '~/assets/images/home/bg1.jpg'
-import ico1 from '~/assets/images/home/ico1.png'
-import xxfw1 from '~/assets/images/home/xxfw1.png'
-import szfw2 from '~/assets/images/home/szfw2.jpg'
-import xxfw2 from '~/assets/images/home/xxfw2.png'
-import c1 from '~/assets/images/home/c1.jpg'
-import youshi from '~/assets/images/home/youshi.png'
-import fwcg from '~/assets/images/home/fwcg.png'
-import fwlc from '~/assets/images/home/fwlc.png'
 
-import leftLogo from '~/assets/images/service/left-logo.png'
 import rightLogo from '~/assets/images/service/right-logo.png'
 
-const serviceText = [
-  { title: '行业方案咨询服务', desc: '覆盖政府、工业、科研、金融、办公、智慧城市、能源、军工、教育等50+行业', pic: ico1 },
-  { title: '人力资源解决服务', desc: '人事代理、劳务派遣、薪酬服务、商业险服务、健康管理服务等', pic: ico1 },
-  { title: '产品方案解决服务', desc: 'CRM客户关系系统、OA办公系统、项管理系统、费控管理系统等类型产品解决服务', pic: ico1 },
-  { title: '行业综合服务', desc: '业务咨询+方案定制+产品研发+项目实施一体化的综合服务', pic: ico1 },
-]
-const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' },]
+import left1 from '~/assets/images/post/left1.png'
+import left2 from '~/assets/images/post/left2.png'
+import banner from '~/assets/images/post/banner.jpg'
 
 </script>
 
 <template>
 
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1">
-    <!-- 服务内容 -->
+    <img ref="bgImgRef" class="w-full" alt="bg" :src="banner">
+    <!-- 服务范围 -->
     <div class="bg-[#F6F7FB]  w-full ">
 
       <LayoutPageWrapper>
         <div class="flex w-full flex-col  items-center mt-[52px] ">
           <div class=" text-[30px]  font-normal text-left text-[#b4b4b4]">
             Service Content</div>
-          <div class="text-[30px]  font-bold text-left text-black">服务内容</div>
+          <div class="text-[30px]  font-bold text-left text-black">服务范围</div>
         </div>
 
         <div class="flex  gap-[54px] justify-between items-center max-w-[991px]      ">
 
           <div>
-            <img :src="leftLogo" :height="308" />
+            <img :src="left1" />
           </div>
           <div class="w-[567px] h-[147px] text-[14px] font-normal text-[#0d0d0d]  leading-8 indent-8">
             <span>
-              行展科技在电商行业、工业互联网、保险、互联网金融、在线教育、汽车、制造业、大健康、产业园区等行业有丰富的综合服务经验沉淀，从业务咨询一方案定制一实施运营一体化的综合服务。公司的规模和充足稳定的专业团队可为客户提供长期可持续发展提供保障，以“咨询”+“产品”+“服务”的模式为客户提供定制化专属服务，贴合客户需求，提升服务品质，为客户数字化转型一站式赋能。</span>
+              行展科技行业方案咨询服务团队包含100+各行业资深专家，从事行业平均经验超过10年,聚焦行业的全面的咨询体系。数字化时代下，基于对国内市场和数字化的深入了解和积淀，紧抓数字化机遇，注重创新和可持续发展，以前瞻性眼光布局数字化咨询服务发展战略，致力于帮助企事业单位解决管理经营以及与数字化相关的重要问题，为企业提供专业咨询服务。</span>
+          </div>
+        </div>
+
+
+      </LayoutPageWrapper>
+    </div>
+    <!-- 服务内容 -->
+    <div class="bg-[#FBFBFB]  w-full ">
+
+      <LayoutPageWrapper>
+        <div class="flex w-full flex-col  items-center mt-[52px] mb-[40px] ">
+          <div class=" text-[30px]  font-normal text-left text-[#b4b4b4]">
+            Service Content</div>
+          <div class="text-[30px]  font-bold text-left text-black">服务内容</div>
+        </div>
+
+        <div class="flex flex-col  gap-[54px] justify-between  items-center max-w-[991px]      ">
+
+          <div>
+            <img :src="left2" />
+          </div>
+          <div class="  text-[14px] font-normal text-[#0d0d0d] ">
+            <div class=" w-[762px] text-center leading-8 ">
+              包含战略咨询、商业模式规划、产业模式规划、企业业务流程设计/优化、集成产品研发、技术方案、企业人力资源、品牌、IPMS、财经、市场营销、供应链等数字化转型规划咨询。</div>
           </div>
         </div>
 
@@ -56,7 +66,7 @@ const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, {
       </LayoutPageWrapper>
     </div>
     <!-- 合作案例 -->
-    <div class="bg-[#F6F7FB]  w-full ">
+    <div class="bg-[#FBFBFB]  w-full ">
 
       <LayoutPageWrapper>
         <div class="flex w-full flex-col  items-center mt-[52px] ">
