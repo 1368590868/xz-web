@@ -39,8 +39,7 @@ const showDrawer = ref(false)
       </div>
       <!-- menus -->
       <div v-if="$screen.higherThan('md', $screen.current.value)"
-        class="flex gap-[17px]  flex-col space-x-4 items-end  "
-        :class="{ 'divide-x divide-gray-500': menus.length > 0 }">
+        class="flex gap-[17px]  flex-col space-x-4 items-end  " :class="{ ' divide-gray-500': menus.length > 0 }">
         <div class=" h-[24px] text-[18px]  font-bold  text-white">
           400-888-8888
         </div>
