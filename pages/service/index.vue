@@ -2,14 +2,12 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: 'Posts' })
+useHead({ title: '行展服务' })
 
-import bg1 from '~/assets/images/home/bg1.jpg'
+
 import ico1 from '~/assets/images/home/ico1.png'
 
 import banner from '~/assets/images/service/banner.png'
-import leftLogo from '~/assets/images/service/left-logo.png'
-import rightLogo from '~/assets/images/service/right-logo.png'
 import ljxz from '~/assets/images/service/ljxz.png'
 import xzfw1 from '~/assets/images/service/xzfw1.png'
 import xzfw2 from '~/assets/images/service/xzfw2.png'
@@ -18,14 +16,12 @@ import fwfw from '~/assets/images/service/fwfw.png'
 import rightIco from '~/assets/images/service/right-ico.png'
 import szfw1 from '~/assets/images/service/szfw1.png'
 
+import hyzhfw1 from '~/assets/images/service/hyzhfw1.png'
+import rlzyfw from '~/assets/images/service/rlzyfw.png'
+import cpjjfw from '~/assets/images/service/cpjjfw.png'
 
-const serviceText = [
-  { title: '行业方案咨询服务', desc: '覆盖政府、工业、科研、金融、办公、智慧城市、能源、军工、教育等50+行业', pic: ico1 },
-  { title: '人力资源解决服务', desc: '人事代理、劳务派遣、薪酬服务、商业险服务、健康管理服务等', pic: ico1 },
-  { title: '产品方案解决服务', desc: 'CRM客户关系系统、OA办公系统、项管理系统、费控管理系统等类型产品解决服务', pic: ico1 },
-  { title: '行业综合服务', desc: '业务咨询+方案定制+产品研发+项目实施一体化的综合服务', pic: ico1 },
-]
-const szfw = [{ title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' }, { title: '集合AI大模型的数字化服务，助力企业' },]
+
+
 
 const currentComponent = ref('A');
 const router = useRouter()
@@ -43,7 +39,14 @@ const componentRouter = {
   'A': '/post',
   'B': '/rlzyfw',
   'C': '/cpzyfw',
-  'D': '/'
+  'D': '/hyzhfw'
+}
+const componentImg = {
+  'A': fwfw,
+  'B': rlzyfw,
+  'C': cpjjfw,
+  'D': hyzhfw1
+
 }
 
 function goDetail() {
@@ -92,21 +95,24 @@ function goDetail() {
 
         <div class="flex flex-wrap w-full">
 
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4  " @click="showComponent('A')">
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 cursor-pointer  "
+            @click="showComponent('A')">
             <img :src="xzfw1" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'A' ? 'text-[#0D63BE]' : 'text-[#212121]'"
               class="mt-5 text-[16px]  font-bold  ">行业方案咨询服务 </div>
           </div>
 
 
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('B')">
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 cursor-pointer "
+            @click="showComponent('B')">
             <img :src="xzfw2" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'B' ? 'text-[#0D63BE]' : 'text-[#212121]'"
               class="mt-5  text-[16px]  font-bold ">人力资源解决服务</div>
           </div>
 
 
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('C')">
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 cursor-pointer "
+            @click="showComponent('C')">
             <img :src="xzfw1" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'C' ? 'text-[#0D63BE]' : 'text-[#212121]'"
               class="mt-5  text-[16px]  font-bold ">产品方案解决服务</div>
@@ -114,7 +120,8 @@ function goDetail() {
 
 
 
-          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 " @click="showComponent('D')">
+          <div class="flex flex-col items-center basis-1/2 mt-6  md:basis-1/4 cursor-pointer "
+            @click="showComponent('D')">
             <img :src="xzfw3" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'D' ? 'text-[#0D63BE]' : 'text-[#212121]'"
               class="mt-5  text-[16px]  font-bold ">行业综合服务</div>
@@ -133,7 +140,7 @@ function goDetail() {
             </div>
           </div>
           <div class="xl:w-[66%]">
-            <img :src="fwfw" :height="308" />
+            <img :src="componentImg[currentComponent]" />
           </div>
         </div>
 
