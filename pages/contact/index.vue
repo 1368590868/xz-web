@@ -6,9 +6,17 @@ definePageMeta({ layout: 'page' })
 useHead({ title: '联系我们' })
 const api = 'http://192.168.8.39:6088'
 
-setTimeout(() => {
-  openModal()
-}, 3000);
+
+
+
+const isOpen = ref(false)
+
+function closeModal() {
+  isOpen.value = false
+}
+function openModal() {
+  isOpen.value = true
+}
 
 function submit(e: any) {
   e.preventDefault();
@@ -32,15 +40,6 @@ function submit(e: any) {
 
     })
     .catch(error => console.error('Error:', error));
-}
-
-const isOpen = ref(false)
-
-function closeModal() {
-  isOpen.value = false
-}
-function openModal() {
-  isOpen.value = true
 }
 </script>
 
@@ -70,7 +69,7 @@ function openModal() {
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
                 <input id="username" required placeholder="请输入您的名称（称呼）" type="text" name="customerName"
                   autocomplete="given-name"
-                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
 
@@ -84,7 +83,7 @@ function openModal() {
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
                 <input id="phone" required placeholder="+86" type="text" name="customerPhone"
                   autocomplete="tel-extension"
-                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
             <div class="w-[calc(50%-20px)] mr-[20px]">
@@ -97,7 +96,7 @@ function openModal() {
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
                 <input id="company-name" required placeholder="请输入您公司名字" type="text" name="companyName"
                   autocomplete="off"
-                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
             <div class="w-[calc(50%-20px)] ml-[20px]">
@@ -108,7 +107,7 @@ function openModal() {
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
                 <input id="job" placeholder="请输入您职位" type="text" name="jobTitle" autocomplete="off"
-                  class="block px-3 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
             <div class="w-full">
@@ -120,7 +119,7 @@ function openModal() {
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] ">
                 <textarea id="remark" required placeholder="请输入您详细的需求内容" name="remark" rows="6"
-                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                  class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
             <!-- button -->

@@ -14,7 +14,7 @@ import zs4 from '~/assets/images/about/zs4.png'
 import zs5 from '~/assets/images/about/zs5.png'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: '关于我们' })
+useHead({ title: '关于行展' })
 import zs6 from '~/assets/images/about/zs6.png'
 import zs7 from '~/assets/images/about/zs7.png'
 

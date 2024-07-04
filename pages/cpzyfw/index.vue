@@ -9,7 +9,7 @@ import left3 from '~/assets/images/cpzyfw/left3.png'
 import banner from '~/assets/images/cpzyfw/banner.jpg'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: '行业方案咨询服务' })
+useHead({ title: '产品解决方案服务' })
 </script>
 
 <template>
@@ -73,10 +73,11 @@ useHead({ title: '行业方案咨询服务' })
         </div>
         <div class="xl:max-w-[1225px] my-[50px] ">
           <div class="text-[20px] text-[#000000] font-bold ">
-            服务范围
+            人寿保险操作风险管理系统
+
           </div>
           <div class="  text-[#0d0d0d] font-normal mt-[20px]  leading-8  indent-8 ">
-            基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。
+            围绕“创建世界一流专业领军示范企业”目标，加强对操作风险的管控，通过系统为平台的安全性能和稳定性做出更专业及更深度的防护，最终实现公司的互联网应用的“坚如磐石”。
           </div>
         </div>
       </LayoutPageWrapper>

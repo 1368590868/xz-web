@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
-import rightLogo from '~/assets/images/service/right-logo.png'
-
 import left1 from '~/assets/images/rlzyfw/left1.png'
 import left2 from '~/assets/images/rlzyfw/left2.png'
 import left3 from '~/assets/images/rlzyfw/left3.png'
@@ -10,7 +8,7 @@ import left5 from '~/assets/images/rlzyfw/left5.png'
 import banner from '~/assets/images/rlzyfw/banner.jpg'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: '行业方案咨询服务' })
+useHead({ title: '人力资源服务' })
 </script>
 
 <template>
