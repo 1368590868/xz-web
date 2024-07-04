@@ -26,7 +26,7 @@ const showDrawer = ref(false)
         <slot name="title">
           <NuxtLink to="/">
             <div class="flex justify-center items-center gap-[8px]">
-              <img :src="logo" alt="logo" class="w-[285px]" />
+              <img loading="lazy" :src="logo" alt="logo" class="w-[285px]" />
 
               <div class="flex flex-col text-white text-[18px] font-normal pl-[8px]">
                 <span>行展科技</span>

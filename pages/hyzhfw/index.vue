@@ -12,7 +12,7 @@ useHead({ title: '行业综合服务' })
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
+    <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
     <!-- 服务内容 -->
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
@@ -25,7 +25,7 @@ useHead({ title: '行业综合服务' })
 
         <div class="flex gap-[54px] justify-between items-center max-w-[991px]">
           <div>
-            <img :src="left1" />
+            <img loading="lazy" :src="left1" />
           </div>
           <div class="w-[567px] h-[147px]   font-normal text-[#0d0d0d] leading-8 indent-8">
             <span>
@@ -58,7 +58,7 @@ useHead({ title: '行业综合服务' })
             </div>
           </div>
           <div>
-            <img :src="rightLogo" :height="308" />
+            <img loading="lazy" :src="rightLogo" :height="308" />
           </div>
         </div>
         <div class="max-w-[1200px] mb-[50px]">

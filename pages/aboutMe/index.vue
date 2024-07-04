@@ -13,23 +13,19 @@ import zs4 from '~/assets/images/about/zs4.png'
 import zs5 from '~/assets/images/about/zs5.png'
 // compiler micro
 definePageMeta({ layout: 'page' })
-useHead({ title: 'Posts' })
+useHead({ title: '关于我们' })
 import zs6 from '~/assets/images/about/zs6.png'
 import zs7 from '~/assets/images/about/zs7.png'
-
-import c1 from '~/assets/images/home/c1.jpg'
-import fwcg from '~/assets/images/home/fwcg.png'
-import fwlc from '~/assets/images/home/fwlc.png'
 
 const gsjsUrl = ref(`url(${gsjs})`)
 </script>
 
 <template>
   <div class="w-full">
-    <img class="w-full" alt="bg" :src="banner" />
+    <img loading="lazy" class="w-full" alt="bg" :src="banner" />
     <!-- 公司介绍 -->
     <div class="h-[780px] w-full gsjs">
-      <!-- <img class="w-full absolute left-0 top-0" alt="公司介绍" :src="gsjs"> -->
+      <!--  <img loading="lazy"class="w-full absolute left-0 top-0" alt="公司介绍" :src="gsjs"> -->
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -78,19 +74,19 @@ const gsjsUrl = ref(`url(${gsjs})`)
 
         <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
-            <img :src="zs1" />
+            <img loading="lazy" :src="zs1" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               中关村高新技术企业
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img :src="zs2" />
+            <img loading="lazy" :src="zs2" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               ISACA认证高新技术企业
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img :src="zs3" />
+            <img loading="lazy" :src="zs3" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               人力资源许可证
             </div>
@@ -99,25 +95,25 @@ const gsjsUrl = ref(`url(${gsjs})`)
 
         <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
-            <img :src="zs4" />
+            <img loading="lazy" :src="zs4" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               信息技术服务管理认证证书
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img :src="zs5" />
+            <img loading="lazy" :src="zs5" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               质量管理体系认证证书
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img :src="zs6" />
+            <img loading="lazy" :src="zs6" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               计算机软件著作权登记证书
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img :src="zs7" />
+            <img loading="lazy" :src="zs7" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               信息安全管理体系认证证书
             </div>
@@ -134,10 +130,10 @@ const gsjsUrl = ref(`url(${gsjs})`)
           </div>
           <div class="text-[30px] font-bold text-left text-black">发展历程</div>
         </div>
-        <img :src="fzlc" />
+        <img loading="lazy" :src="fzlc" />
       </LayoutPageWrapper>
     </div>
-    <img :src="jzg" width="100%" />
+    <img loading="lazy" :src="jzg" width="100%" />
     <!-- 区域分布 -->
     <div class="bg-[#FBFBFB] relative w-full pb-[30px]">
       <LayoutPageWrapper>
@@ -147,7 +143,7 @@ const gsjsUrl = ref(`url(${gsjs})`)
           </div>
           <div class="text-[30px] font-bold text-left text-black">区域分布</div>
         </div>
-        <img :src="map" />
+        <img loading="lazy" :src="map" />
         <div
           class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] pl-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">

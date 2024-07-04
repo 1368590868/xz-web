@@ -8,7 +8,7 @@ useHead({ title: '行展服务' })
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1" />
+    <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="bg1" />
     <form>
       <div class="bg-[#F6F7FB] w-full">
         <LayoutPageWrapper>

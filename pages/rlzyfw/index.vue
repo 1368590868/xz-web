@@ -15,7 +15,7 @@ useHead({ title: '行业方案咨询服务' })
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
+    <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
     <!-- 服务内容 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
@@ -27,7 +27,7 @@ useHead({ title: '行业方案咨询服务' })
         </div>
 
         <div>
-          <img :src="left1" />
+          <img loading="lazy" :src="left1" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -43,7 +43,7 @@ useHead({ title: '行业方案咨询服务' })
           </div>
         </div>
         <div>
-          <img :src="left2" />
+          <img loading="lazy" :src="left2" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -59,7 +59,7 @@ useHead({ title: '行业方案咨询服务' })
           </div>
         </div>
         <div>
-          <img :src="left3" />
+          <img loading="lazy" :src="left3" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -75,7 +75,7 @@ useHead({ title: '行业方案咨询服务' })
 
         <div class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]">
           <div>
-            <img :src="left5" :height="308" />
+            <img loading="lazy" :src="left5" :height="308" />
           </div>
           <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
             <div class="text-[20px] text-blank font-bold indent-0 mb-[24px]">

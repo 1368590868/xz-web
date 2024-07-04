@@ -54,7 +54,7 @@ function goDetail() {
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
+    <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
     <!-- 了解行展 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
@@ -71,7 +71,7 @@ function goDetail() {
               社会生产力日新月异的今天，模式不断被改变和替换，企业经营者需要保持清晰、准确的视角，来做出决策和改变。行展科技作为一家科技类综合服务商，紧跟市场发展变化，通过数字技术手段，将传统服务转化为数智化形式的服务，将服务过程、服务内容、服务形式数字化自动化，为企业获取更多商业机会和利润提供专业服务。</span>
           </div>
           <div>
-            <img :src="ljxz" :height="251" />
+            <img loading="lazy" :src="ljxz" :height="251" />
           </div>
         </div>
       </LayoutPageWrapper>
@@ -89,7 +89,7 @@ function goDetail() {
         <div class="flex flex-wrap w-full">
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('A')">
-            <img :src="xzfw1" class="w-[44px] h-[44px]" />
+            <img loading="lazy" :src="xzfw1" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'A' ? 'text-[#0D63BE]' : 'text-[#212121]'
               " class="mt-5 text-[16px] font-bold">
               行业方案咨询服务
@@ -98,7 +98,7 @@ function goDetail() {
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('B')">
-            <img :src="xzfw2" class="w-[44px] h-[44px]" />
+            <img loading="lazy" :src="xzfw2" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'B' ? 'text-[#0D63BE]' : 'text-[#212121]'
               " class="mt-5 text-[16px] font-bold">
               人力资源解决服务
@@ -107,7 +107,7 @@ function goDetail() {
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('C')">
-            <img :src="xzfw1" class="w-[44px] h-[44px]" />
+            <img loading="lazy" :src="xzfw1" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'C' ? 'text-[#0D63BE]' : 'text-[#212121]'
               " class="mt-5 text-[16px] font-bold">
               产品方案解决服务
@@ -116,7 +116,7 @@ function goDetail() {
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('D')">
-            <img :src="xzfw3" class="w-[44px] h-[44px]" />
+            <img loading="lazy" :src="xzfw3" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'D' ? 'text-[#0D63BE]' : 'text-[#212121]'
               " class="mt-5 text-[16px] font-bold">
               行业综合服务
@@ -133,20 +133,20 @@ function goDetail() {
               {{ componentText[currentComponent] }}
             </div>
             <div class="align-middle cursor-pointer" @click="goDetail">
-              <img class="inline-block" :src="rightIco" />
+              <img loading="lazy" class="inline-block" :src="rightIco" />
               <span class="  font-bold text-[#0d63be]">
                 查看详情</span>
             </div>
           </div>
           <div class="xl:w-[66%]">
-            <img :src="componentImg[currentComponent]" />
+            <img loading="lazy" :src="componentImg[currentComponent]" />
           </div>
         </div>
       </LayoutPageWrapper>
     </div>
 
     <LayoutPageWrapper>
-      <img :src="szfw1" class="my-[50px]" />
+      <img loading="lazy" :src="szfw1" class="my-[50px]" />
       <div class="self-start text-[20px] text-[#000000] font-bold mb-[10px]">
         服务范围
       </div>
@@ -154,7 +154,7 @@ function goDetail() {
         基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。
       </div>
       <div class="self-start align-middle cursor-pointer my-[30px]">
-        <img class="inline-block" :src="rightIco" />
+        <img loading="lazy" class="inline-block" :src="rightIco" />
         <span class="  font-bold text-[#0d63be]"> 查看详情</span>
       </div>
     </LayoutPageWrapper>

@@ -10,7 +10,7 @@ const { awesome } = useAppConfig()
       <span> 版权所有：北京行展软件科技有限公司 </span>
       <span> 京ICP备18007287号 </span>
       <span class="flex items-center gap-[3px]">
-        <img :src="gongan" /> 京公网安备10000000000001号
+        <img loading="lazy" :src="gongan" /> 京公网安备10000000000001号
       </span>
     </div>
   </footer>

@@ -14,7 +14,7 @@ useHead({ title: '行业方案咨询服务' })
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
+    <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
     <!-- 服务内容 -->
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
@@ -27,7 +27,7 @@ useHead({ title: '行业方案咨询服务' })
 
         <div class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]">
           <div>
-            <img :src="left1" />
+            <img loading="lazy" :src="left1" />
           </div>
           <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
             <div class="leading-8 w-[477px]">
@@ -50,7 +50,7 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[30px] font-bold text-left text-black">服务范围</div>
         </div>
         <div>
-          <img :src="left2" />
+          <img loading="lazy" :src="left2" />
         </div>
         <div class="xl:max-w-[1200px] my-[50px]">
           <div class="  text-[#0d0d0d] font-normal mt-[20px] text-center">
@@ -69,7 +69,7 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
         <div class="mb-[50px]">
-          <img :src="left3" />
+          <img loading="lazy" :src="left3" />
         </div>
         <div class="xl:max-w-[868px] my-[50px]">
           <div class="text-[20px] text-[#000000] font-bold text-center">
