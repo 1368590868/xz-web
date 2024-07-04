@@ -73,15 +73,11 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div
-          class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]"
-        >
+        <div class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]">
           <div>
             <img :src="left5" :height="308" />
           </div>
-          <div
-            class="w-[537px] text-[14px] font-normal text-[#0d0d0d] leading-6 indent-8"
-          >
+          <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
             <div class="text-[20px] text-blank font-bold indent-0 mb-[24px]">
               阳光保险长期合作
             </div>
@@ -93,7 +89,7 @@ useHead({ title: '行业方案咨询服务' })
         </div>
         <div class="xl:min-w-[1200px] my-[50px]">
           <div class="text-[26px] text-black font-bold">合作岗位</div>
-          <div class="text-[14px] text-[#0d0d0d] font-normal mt-[20px]">
+          <div class="  text-[#0d0d0d] font-normal mt-[20px]">
             高级测试工程师、中级测试工程师、初级测试工程师、高级JAVA工程师、中级JAVA工程师、初级JAVA工程师、IOS高级、IOS中级、IOS初级、安卓高级、安卓中级、安卓初级
           </div>
         </div>

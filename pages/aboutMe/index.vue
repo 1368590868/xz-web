@@ -38,9 +38,7 @@ const gsjsUrl = ref(`url(${gsjs})`)
           <div class="text-[30px] font-bold text-left text-black">公司介绍</div>
         </div>
 
-        <div
-          class="flex mt-[40px] flex-col text-[14px] font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center"
-        >
+        <div class="flex mt-[40px] flex-col   font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center">
           <div>
             北京行展软件科技有限公司成立于2016年，总部坐落于北京海淀。公司是北京市中关村高新技术企业，专注于数字信息化建设综合服务领域，在西安、成都、深圳、重庆、济南、武汉、广州、杭州、大庆、宁波等多地设立了分支机构。
           </div>
@@ -78,9 +76,7 @@ const gsjsUrl = ref(`url(${gsjs})`)
           <div class="text-[30px] font-bold text-left text-black">行展资质</div>
         </div>
 
-        <div
-          class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]"
-        >
+        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
             <img :src="zs1" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -101,9 +97,7 @@ const gsjsUrl = ref(`url(${gsjs})`)
           </div>
         </div>
 
-        <div
-          class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]"
-        >
+        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
             <img :src="zs4" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -155,8 +149,7 @@ const gsjsUrl = ref(`url(${gsjs})`)
         </div>
         <img :src="map" />
         <div
-          class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] pl-[12px]"
-        >
+          class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] pl-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司
           </div>

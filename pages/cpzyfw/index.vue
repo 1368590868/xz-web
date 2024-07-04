@@ -25,15 +25,11 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div
-          class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]"
-        >
+        <div class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]">
           <div>
             <img :src="left1" />
           </div>
-          <div
-            class="w-[537px] text-[14px] font-normal text-[#0d0d0d] leading-6 indent-8"
-          >
+          <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
             <div class="leading-8 w-[477px]">
               产品解决方案服务以常规技术为导向，为客户提供广泛的信息技术服务，如项目方案设计、软件开发、测试、运行维护等。
             </div>
@@ -57,9 +53,7 @@ useHead({ title: '行业方案咨询服务' })
           <img :src="left2" />
         </div>
         <div class="xl:max-w-[1200px] my-[50px]">
-          <div
-            class="text-[14px] text-[#0d0d0d] font-normal mt-[20px] text-center"
-          >
+          <div class="  text-[#0d0d0d] font-normal mt-[20px] text-center">
             提供从需求分析、系统架构设计到程序编写和测试的全流程信息系统设计与开发服务。拥有丰富的软件产品研发经验，为客户提供从设计研发运营的一站式服务。提供从单元测试、集成测试到用户验收测试的全流程测试服务，确保软件质量满足客户需求。提供7x24小时的系统运行监控、故障排查和更新维护等全方位的运行维护服务。
           </div>
         </div>
@@ -81,9 +75,7 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[20px] text-[#000000] font-bold text-center">
             招商路检工程成本管控系统
           </div>
-          <div
-            class="text-[14px] text-[#0d0d0d] font-normal mt-[20px] text-center"
-          >
+          <div class="  text-[#0d0d0d] font-normal mt-[20px] text-center">
             围绕“创建世界一流专业领军示范企业”目标，加快战略转型升级，加强项目直接生产成本管控，合理统筹工程项目的运营管理，拟通过系统为精细化管理提供准确的核算依据，致力于为公司实现经济效益最大化。
           </div>
         </div>

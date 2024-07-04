@@ -1,9 +1,5 @@
 <script lang="ts" setup>
-// import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-// 导入 Swiper 基础样式
-// import 'swiper/css'
-// 导入 Pagination 模块样式
-// import 'swiper/css/pagination'
+
 import { Pagination, Autoplay } from 'swiper/modules'
 
 import bg1 from '~/assets/images/home/bg1.jpg'
@@ -48,24 +44,6 @@ const szfw = [
 <template>
   <div class="w-full">
     <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1" />
-    <!-- swiper -->
-    <!-- <swiper
-      :direction="'vertical'"
-      :pagination="{
-        clickable: true,
-      }"
-      :modules="[Pagination, Autoplay]"
-    >
-      <swiper-slide>
-        <img :src="bg1" alt="Slide 1" class="w-full" />
-      </swiper-slide>
-      <swiper-slide>
-        <img :src="fwcg" alt="Slide 2" class="w-full" />
-      </swiper-slide>
-      <swiper-slide>
-        <img :src="youshi" alt="Slide 3" class="w-full" />
-      </swiper-slide>
-    </swiper> -->
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
@@ -85,7 +63,7 @@ const szfw = [
                 {{ item.title }}
               </div>
             </div>
-            <div class="text-[14px] font-normal text-left text-[#363636] leading-[26px] flex mt-[17px]">
+            <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px]">
               {{ item.desc }}
             </div>
           </div>
@@ -99,7 +77,7 @@ const szfw = [
                 数智服务
               </div>
             </div>
-            <div class="text-[14px] font-normal text-left text-[#363636] my-[28px]">
+            <div class="  font-normal text-left text-[#363636] my-[28px]">
               集合AI大模型的数字化服务，助力企业数智化服务转型升级
             </div>
             <div v-for="item of szfw">
@@ -131,29 +109,29 @@ const szfw = [
         <div class="flex relative flex-wrap max-w-[1050px] justify-center">
           <img :src="youshi" />
           <div
-            class="absolute top-[102px] left-[-236px] w-[294px] h-[67px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[102px] left-[-236px] w-[294px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             五千余真实案例积累支撑，和几十家大型央国企长期合作，成熟的解决方案，合作方案多样化，交付有保障。
           </div>
 
           <div
-            class="absolute top-[286px] left-[-310px] w-[313px] h-[91px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[286px] left-[-310px] w-[313px] h-[91px]   font-normal text-left text-[#959595] leading-[24px">
             通过CMMI3、IS09001、IS020000、IS027001专业认证;自研开发平台;有云计算、大数据、A1、移动互联、物联网、安全可信、区块链5G等创新数字技术实践能力。
           </div>
           <div
-            class="absolute top-[486px] left-[-210px] w-[225px] h-[91px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[486px] left-[-210px] w-[225px] h-[91px]   font-normal text-left text-[#959595] leading-[24px">
             1000+专业研发团队，核心人员拥有10年以上工作经验，3年以上经验技术研发人员占90%，资深项目经理高效管控项目各个环节。
           </div>
           <!-- right -->
           <div
-            class="absolute top-[102px] left-[600px] w-[310px] h-[43px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[102px] left-[600px] w-[310px] h-[43px]   font-normal text-left text-[#959595] leading-[24px">
             超10个分布全国主要区域的子公司，本地化服务，7X24小时为客户提供面对面的优质响应。
           </div>
           <div
-            class="absolute top-[286px] left-[650px] w-[262px] h-[67px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[286px] left-[650px] w-[262px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             行展科技提供业务咨询+方案定制+产品研发+项目实施一体化的综合服务，为客户数字化转型全方面赋能。
           </div>
           <div
-            class="absolute top-[486px] left-[600px] w-[308px] h-[67px] text-[14px] font-normal text-left text-[#959595] leading-[24px">
+            class="absolute top-[486px] left-[600px] w-[308px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             专门的AI技术团队，向企业提供大模型连接服务，一站式行业训练平台，帮助企业快速构建专业级AI产品，紧跟人工智能时代步伐。
           </div>
         </div>
