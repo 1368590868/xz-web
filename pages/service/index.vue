@@ -20,6 +20,8 @@ import cpjjfw from '~/assets/images/service/cpjjfw.png'
 definePageMeta({ layout: 'page' })
 useHead({ title: '行展服务' })
 
+
+
 const currentComponent = ref('A')
 const router = useRouter()
 function showComponent(component: string) {
@@ -156,5 +158,6 @@ function goDetail() {
         <span class="  font-bold text-[#0d63be]"> 查看详情</span>
       </div>
     </LayoutPageWrapper>
+
   </div>
 </template>

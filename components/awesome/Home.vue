@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 
-import { Pagination, Autoplay } from 'swiper/modules'
-
 import bg1 from '~/assets/images/home/bg1.jpg'
 import ico1 from '~/assets/images/home/ico1.png'
 import xxfw1 from '~/assets/images/home/xxfw1.png'
@@ -11,6 +9,9 @@ import c1 from '~/assets/images/home/c1.jpg'
 import youshi from '~/assets/images/home/youshi.png'
 import fwcg from '~/assets/images/home/fwcg.png'
 import fwlc from '~/assets/images/home/fwlc.png'
+
+import banner1 from '~/assets/images/home/banner1.png'
+import banner2 from '~/assets/images/home/banner2.png'
 
 const serviceText = [
   {
@@ -39,11 +40,35 @@ const szfw = [
   { title: '集合AI大模型的数字化服务，助力企业' },
   { title: '集合AI大模型的数字化服务，助力企业' },
 ]
+
+const swiperImgs = [
+  {
+    title: 'swiper1',
+    img: banner1,
+  },
+  {
+    title: 'swiper2',
+    img: banner2,
+  },
+  // {
+  //   title: 'swiper3',
+  //   img: bg1,
+  // },
+]
 </script>
 
 <template>
   <div class="w-full">
-    <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1" />
+    <!-- <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1" /> -->
+    <!-- swiper -->
+    <Swiper class="w-full" :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation, SwiperEffectFade]"
+      :pagination="true" :slides-per-view="1" :loop="true" :autoplay="{
+        delay: 3000,
+      }" :grabCursor="true" :navigation="true" :effect="'fade'">
+      <SwiperSlide v-for="(slide, idx) in swiperImgs" :key="idx">
+        <img :src="slide.img" class="w-full" :alt="slide.title" />
+      </SwiperSlide>
+    </Swiper>
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
