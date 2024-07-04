@@ -88,7 +88,14 @@ export default defineNuxtConfig({
       theme: 'github-dark',
     },
   },
-
+  
+  vite: {
+    server: {
+        hmr: {
+            clientPort: 3000
+        }
+    }
+},
   // todo: feat/localization
   // module::i18n
   // i18n: {

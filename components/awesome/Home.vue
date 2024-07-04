@@ -12,6 +12,7 @@ import fwlc from '~/assets/images/home/fwlc.png'
 
 import banner1 from '~/assets/images/home/banner1.png'
 import banner2 from '~/assets/images/home/banner2.png'
+import banner3 from '~/assets/images/test.jpg'
 
 const serviceText = [
   {
@@ -44,29 +45,29 @@ const szfw = [
 const swiperImgs = [
   {
     title: 'swiper1',
-    img: banner1,
+    img: banner3,
   },
   {
     title: 'swiper2',
     img: banner2,
   },
-  // {
-  //   title: 'swiper3',
-  //   img: bg1,
-  // },
+  {
+    title: 'swiper3',
+    img: banner1,
+  },
 ]
 </script>
 
 <template>
   <div class="w-full">
-    <!-- <img ref="bgImgRef" class="w-full" alt="bg" :src="bg1" /> -->
+    <!--  <img loading="lazy"ref="bgImgRef" class="w-full" alt="bg" :src="bg1" /> -->
     <!-- swiper -->
     <Swiper class="w-full" :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation, SwiperEffectFade]"
       :pagination="true" :slides-per-view="1" :loop="true" :autoplay="{
         delay: 3000,
       }" :grabCursor="true" :navigation="true" :effect="'fade'">
       <SwiperSlide v-for="(slide, idx) in swiperImgs" :key="idx">
-        <img :src="slide.img" class="w-full" :alt="slide.title" />
+        <img loading="lazy" :src="slide.img" class="w-full" :alt="slide.title" />
       </SwiperSlide>
     </Swiper>
     <div class="bg-[#F6F7FB] w-full">
@@ -83,7 +84,7 @@ const swiperImgs = [
         <div class="flex flex-wrap max-w-[1050px] justify-center">
           <div v-for="(item, index) of serviceText" :class="index % 2 === 0 ? 'basis-3/5' : 'basis-2/5'">
             <div class="flex align-top mt-[42px]">
-              <img :src="item.pic" />
+              <img loading="lazy" :src="item.pic" />
               <div class="h-[26px] text-[20px] font-bold text-left text-[#0d63be]">
                 {{ item.title }}
               </div>
@@ -97,7 +98,7 @@ const swiperImgs = [
         <div class="flex justify-between max-w-[991px] mt-[69px]">
           <div>
             <div class="flex align-top mt-[42px]">
-              <img :src="xxfw1" />
+              <img loading="lazy" :src="xxfw1" />
               <div class="text-[26px] font-bold text-left text-[#0d63be]">
                 数智服务
               </div>
@@ -107,13 +108,13 @@ const swiperImgs = [
             </div>
             <div v-for="item of szfw">
               <div class="flex mb-[19px]">
-                <img width="20px" height="20px" :src="szfw2" />
+                <img loading="lazy" width="20px" height="20px" :src="szfw2" />
                 <span class="ml-[9px]">{{ item.title }}</span>
               </div>
             </div>
           </div>
           <div class="ml-[64px]">
-            <img :src="xxfw2" height="335px" />
+            <img loading="lazy" :src="xxfw2" height="335px" />
           </div>
         </div>
       </LayoutPageWrapper>
@@ -132,7 +133,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex relative flex-wrap max-w-[1050px] justify-center">
-          <img :src="youshi" />
+          <img loading="lazy" :src="youshi" />
           <div
             class="absolute top-[102px] left-[-236px] w-[294px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             五千余真实案例积累支撑，和几十家大型央国企长期合作，成熟的解决方案，合作方案多样化，交付有保障。
@@ -173,7 +174,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex relative flex-wrap max-w-[1050px] justify-center pt-[56px]">
-          <img :src="fwcg" />
+          <img loading="lazy" :src="fwcg" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -188,7 +189,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex relative flex-wrap max-w-[1050px] justify-center pt-[56px]">
-          <img :src="fwlc" />
+          <img loading="lazy" :src="fwlc" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -209,7 +210,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex flex-wrap gap-4 max-w-[1100px] my-[69px]">
-          <img v-for="(item, i) of Array.from({ length: 20 })" :key="i" :src="c1" />
+          <img loading="lazy" v-for="(item, i) of Array.from({ length: 20 })" :key="i" :src="c1" />
         </div>
       </LayoutPageWrapper>
     </div>
