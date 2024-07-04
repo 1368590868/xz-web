@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   experimental: {
     localLayerAliases: true,
   },
+  plugins: ['~/plugins/vue-swiper.js'],
 
   // app config
   app: {
