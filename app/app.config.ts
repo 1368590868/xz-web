@@ -3,8 +3,7 @@ import type { AppConfigInput } from 'nuxt/schema'
 export default defineAppConfig({
   awesome: {
     name: '行展软件科技',
-    description:
-      '',
+    description: '',
     project: {
       links: {
         github: '',
@@ -14,7 +13,7 @@ export default defineAppConfig({
       page: {
         navbar: {
           menus: [
-            { type: 'link', title: '首页', to: { path:'/' } },
+            { type: 'link', title: '首页', to: { path: '/' } },
             { type: 'link', title: '行展服务', to: { name: 'service' } },
             { type: 'link', title: '关于行展', to: { name: 'aboutMe' } },
             { type: 'link', title: '联系我们', to: { name: 'contact' } },
