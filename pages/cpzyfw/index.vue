@@ -53,7 +53,7 @@ useHead({ title: '行业方案咨询服务' })
           <img loading="lazy" :src="left2" />
         </div>
         <div class="xl:max-w-[1200px] my-[50px]">
-          <div class="  text-[#0d0d0d] font-normal mt-[20px] text-center">
+          <div class="  text-[#0d0d0d] font-normal mt-[20px]  leading-8 indent-8">
             提供从需求分析、系统架构设计到程序编写和测试的全流程信息系统设计与开发服务。拥有丰富的软件产品研发经验，为客户提供从设计研发运营的一站式服务。提供从单元测试、集成测试到用户验收测试的全流程测试服务，确保软件质量满足客户需求。提供7x24小时的系统运行监控、故障排查和更新维护等全方位的运行维护服务。
           </div>
         </div>
@@ -71,12 +71,12 @@ useHead({ title: '行业方案咨询服务' })
         <div class="mb-[50px]">
           <img loading="lazy" :src="left3" />
         </div>
-        <div class="xl:max-w-[868px] my-[50px]">
-          <div class="text-[20px] text-[#000000] font-bold text-center">
-            招商路检工程成本管控系统
+        <div class="xl:max-w-[1225px] my-[50px] ">
+          <div class="text-[20px] text-[#000000] font-bold ">
+            服务范围
           </div>
-          <div class="  text-[#0d0d0d] font-normal mt-[20px] text-center">
-            围绕“创建世界一流专业领军示范企业”目标，加快战略转型升级，加强项目直接生产成本管控，合理统筹工程项目的运营管理，拟通过系统为精细化管理提供准确的核算依据，致力于为公司实现经济效益最大化。
+          <div class="  text-[#0d0d0d] font-normal mt-[20px]  leading-8  indent-8 ">
+            基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。
           </div>
         </div>
       </LayoutPageWrapper>

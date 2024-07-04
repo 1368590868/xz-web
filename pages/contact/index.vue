@@ -6,6 +6,9 @@ definePageMeta({ layout: 'page' })
 useHead({ title: '联系我们' })
 const api = 'http://192.168.8.39:6088'
 
+setTimeout(() => {
+  openModal()
+}, 3000);
 
 function submit(e: any) {
   e.preventDefault();
@@ -126,7 +129,7 @@ function openModal() {
                 注：提交成功后我们将会安排专家尽快与您联系!
               </div>
               <button type="submit"
-                class="rounded-md w-[179px] bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                class="rounded-md w-[179px] h-[50px] bg-[#0D63BE] px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 提交内容
               </button>
             </div>

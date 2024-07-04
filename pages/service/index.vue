@@ -29,10 +29,10 @@ function showComponent(component: string) {
 }
 
 const componentText = {
-  A: '覆盖政府、工业、科研、金融、办公、智慧城市、能源、军工、教育等50+行业',
-  B: '人事代理、劳务派遣、薪酬服务、商业险服务、健康管理服务等',
-  C: 'CRM客户关系系统、OA办公系统、项目管理系统、费控管理系统等类型产品解决服务',
-  D: '业务咨询+方案定制+产品研发+项目实施一体化的综合服务',
+  A: '行展咨询从顶层战略到业务运营模式规划、技术支撑或引领、一站式解决方案三个方面，为客户提供全面的端到端的咨询服务。',
+  B: '面向企事业单位，提供积极的、完善的、可持续的人力资源生态服务，全方位解决人力资源的名类痛点。',
+  C: '产品方案解决服务以常规技术为导向，为客户提供广泛的信息技术服务,如产品设计、软件开发、测试、运行维护等。',
+  D: '行展科技提供业务咨询+方案定制+产品研发+项目实施一体化的综合服务，为客户数字化转型全方面赋能。',
 }
 const componentRouter = {
   A: '/post',
@@ -77,7 +77,7 @@ function goDetail() {
       </LayoutPageWrapper>
     </div>
     <!-- 行展服务 -->
-    <div class="bg-[#F6F7FB] w-full">
+    <div class="bg-[#F6F7FB] w-full h-[564px]">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -94,6 +94,7 @@ function goDetail() {
               " class="mt-5 text-[16px] font-bold">
               行业方案咨询服务
             </div>
+            <div v-show="currentComponent === 'A'" class="w-[32px] h-[2px] bg-[#0D63BE] mt-[5px]"></div>
           </div>
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
@@ -103,6 +104,7 @@ function goDetail() {
               " class="mt-5 text-[16px] font-bold">
               人力资源解决服务
             </div>
+            <div v-show="currentComponent === 'B'" class="w-[32px] h-[2px] bg-[#0D63BE] mt-[5px]"></div>
           </div>
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
@@ -112,6 +114,7 @@ function goDetail() {
               " class="mt-5 text-[16px] font-bold">
               产品方案解决服务
             </div>
+            <div v-show="currentComponent === 'C'" class="w-[32px] h-[2px] bg-[#0D63BE] mt-[5px]"></div>
           </div>
 
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
@@ -121,6 +124,7 @@ function goDetail() {
               " class="mt-5 text-[16px] font-bold">
               行业综合服务
             </div>
+            <div v-show="currentComponent === 'D'" class="w-[32px] h-[2px] bg-[#0D63BE] mt-[5px]"></div>
           </div>
         </div>
 
@@ -129,7 +133,7 @@ function goDetail() {
             <div class="text-[20px] text-blank font-bold mb-[24px] text-center">
               服务范围
             </div>
-            <div class="mb-[10px]">
+            <div class="mb-[10px] w-[453px]">
               {{ componentText[currentComponent] }}
             </div>
             <div class="align-middle cursor-pointer" @click="goDetail">

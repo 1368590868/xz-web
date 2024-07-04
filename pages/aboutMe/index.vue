@@ -3,8 +3,9 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 import banner from '~/assets/images/about/banner.png'
 import gsjs from '~/assets/images/about/gsjs.png'
 import fzlc from '~/assets/images/about/fzlc.png'
-import jzg from '~/assets/images/about/jzg.png'
+import jzg from '~/assets/images/about/jzg.jpg'
 import map from '~/assets/images/about/map.png'
+import dw from '~/assets/images/about/dw.png'
 
 import zs1 from '~/assets/images/about/zs1.png'
 import zs2 from '~/assets/images/about/zs2.png'
@@ -18,6 +19,7 @@ import zs6 from '~/assets/images/about/zs6.png'
 import zs7 from '~/assets/images/about/zs7.png'
 
 const gsjsUrl = ref(`url(${gsjs})`)
+const dwUrl = ref(`url(${dw})`)
 </script>
 
 <template>
@@ -145,19 +147,19 @@ const gsjsUrl = ref(`url(${gsjs})`)
         </div>
         <img loading="lazy" :src="map" />
         <div
-          class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] pl-[12px]">
+          class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px]  px-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司
           </div>
-          <div class="text-[12px] text-[363636] font-normal mt-[13px]">
+          <div class="text-[14px] text-[363636] font-normal mt-[13px]">
             联系电话：010-84291290
           </div>
-          <div class="text-[12px] text-[363636] font-normal mt-[7px]">
+          <div class="text-[14px] text-[363636] font-normal mt-[7px]">
             电子邮件：gouweisong@163.com
           </div>
 
-          <div class="pl-[8px] py-[13px]">
-            <div class="text-[12px] font-normal text-[#363636]">
+          <div class="location-bg pl-[8px] py-[13px] mt-[5px]">
+            <div class="text-[14px] font-normal text-[#363636]">
               北京市海淀区上地信息路1号金远见大厦B座8层829
             </div>
           </div>
@@ -169,6 +171,13 @@ const gsjsUrl = ref(`url(${gsjs})`)
 <style scoped>
 .gsjs {
   background-image: v-bind(gsjsUrl);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location-bg {
+  background-image: v-bind(dwUrl);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

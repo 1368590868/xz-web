@@ -1,18 +1,17 @@
 <script lang="ts" setup>
 
-import bg1 from '~/assets/images/home/bg1.jpg'
 import ico1 from '~/assets/images/home/ico1.png'
 import xxfw1 from '~/assets/images/home/xxfw1.png'
 import szfw2 from '~/assets/images/home/szfw2.jpg'
 import xxfw2 from '~/assets/images/home/xxfw2.png'
-import c1 from '~/assets/images/home/c1.jpg'
 import youshi from '~/assets/images/home/youshi.png'
 import fwcg from '~/assets/images/home/fwcg.png'
 import fwlc from '~/assets/images/home/fwlc.png'
+import logs from '~/assets/images/home/logs.png'
 
 import banner1 from '~/assets/images/home/banner1.png'
 import banner2 from '~/assets/images/home/banner2.png'
-import banner3 from '~/assets/images/test.jpg'
+import banner3 from '~/assets/images/home/banner3.jpg'
 
 const serviceText = [
   {
@@ -37,9 +36,9 @@ const serviceText = [
   },
 ]
 const szfw = [
-  { title: '集合AI大模型的数字化服务，助力企业' },
-  { title: '集合AI大模型的数字化服务，助力企业' },
-  { title: '集合AI大模型的数字化服务，助力企业' },
+  { title: '数字化转型规划服务' },
+  { title: '数字化场景规划服务' },
+  { title: '数字化商业模式规划服务' },
 ]
 
 const swiperImgs = [
@@ -60,7 +59,7 @@ const swiperImgs = [
 
 <template>
   <div class="w-full">
-    <!--  <img loading="lazy"ref="bgImgRef" class="w-full" alt="bg" :src="bg1" /> -->
+
     <!-- swiper -->
     <Swiper class="w-full" :modules="[SwiperAutoplay, SwiperPagination, SwiperNavigation, SwiperEffectFade]"
       :pagination="true" :slides-per-view="1" :loop="true" :autoplay="{
@@ -196,7 +195,7 @@ const swiperImgs = [
     <!-- 合作伙伴 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center my-[40px]">
           <div class="text-[30px] font-bold text-left text-[#000000]">
             合作伙伴
           </div>
@@ -209,9 +208,10 @@ const swiperImgs = [
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-4 max-w-[1100px] my-[69px]">
+        <!-- <div class="flex flex-wrap gap-4 max-w-[1100px] my-[69px]">
           <img loading="lazy" v-for="(item, i) of Array.from({ length: 20 })" :key="i" :src="c1" />
-        </div>
+        </div> -->
+        <img :src="logs" class="mb-[30px]" />
       </LayoutPageWrapper>
     </div>
   </div>
