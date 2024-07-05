@@ -64,7 +64,7 @@ useHead({ title: '行业综合服务' })
         <div class="max-w-[1200px] mb-[50px]">
           <div class="text-[26px] text-black font-bold">合作业务板块</div>
           <div class="  text-[#0d0d0d] font-normal mt-[20px]">
-            拥有6年+得合作时间，16个(城轨装备及信息服务、工程、机电、移动设备、IT基础设施及运维、北斗、供应链、财务、大数据、基础研发、人力资源管理、数据分析与决策、协同办公、ERP、质量管理、综合等)
+            拥有6年+合作时间，16个合作业务板块(城轨装备及信息服务、工程、机电、移动设备、IT基础设施及运维、北斗、供应链、财务、大数据、基础研发、人力资源管理、数据分析与决策、协同办公、ERP、质量管理、综合等)
           </div>
         </div>
       </LayoutPageWrapper>
