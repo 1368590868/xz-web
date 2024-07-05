@@ -33,7 +33,6 @@ function submit(e: any) {
     },
     body: JSON.stringify(data)
   })
-    .then(response => response.json())
     .then(data => {
       console.log('Success:', data);
       openModal()
@@ -41,12 +40,30 @@ function submit(e: any) {
     })
     .catch(error => console.error('Error:', error));
 }
+onMounted(() => {
+  validate()
+
+})
+function validate() {
+  const cInput = document.querySelectorAll('[required]')
+  cInput.forEach((item: any) => {
+    item.addEventListener('invalid', (e: any) => {
+      if (e.target.validity.valueMissing) {
+        e.target.setCustomValidity(e.target.attributes['data-errorMessage'].value);
+      } else {
+        e.target.setCustomValidity('');
+      }
+    })
+  })
+
+}
+
 </script>
 
 <template>
   <div class="w-full">
     <img loading="lazy" ref="bgImgRef" class="w-full" alt="bg" :src="banner" />
-    <form @submit="submit" action="#" method="post">
+    <form id="customForm" @submit="submit" action="#" method="post">
       <div class="bg-[#F6F7FB] w-full">
         <LayoutPageWrapper>
           <div class="flex w-full flex-col items-center mt-[52px]">
@@ -67,8 +84,9 @@ function submit(e: any) {
                 </div>
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
-                <input id="username" required placeholder="请输入您的名称（称呼）" type="text" name="customerName"
-                  autocomplete="given-name"
+                <input id="username" data-errorMessage="请输入您的名称（称呼）" required placeholder="请输入您的名称（称呼）" type="text"
+                  name="customerName" :oninvalid="(e: any) => e.setCustomValidity('Witinnovation')"
+                  :onvalid="(e: any) => e.setCustomValidity('')" autocomplete="given-name"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
@@ -81,8 +99,8 @@ function submit(e: any) {
                 </div>
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
-                <input id="phone" required placeholder="+86" type="text" name="customerPhone"
-                  autocomplete="tel-extension"
+                <input id="phone" data-errorMessage="请输入您的手机号码" required placeholder="+86" type="text"
+                  name="customerPhone" autocomplete="tel-extension"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
@@ -94,8 +112,8 @@ function submit(e: any) {
                 </div>
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] h-[50px]">
-                <input id="company-name" required placeholder="请输入您公司名字" type="text" name="companyName"
-                  autocomplete="off"
+                <input id="company-name" data-errorMessage="请输入您的公司名称" required placeholder="请输入您公司名字" type="text"
+                  name="companyName" autocomplete="off"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
@@ -118,7 +136,8 @@ function submit(e: any) {
                 </div>
               </div>
               <div class="  font-normal text-left text-[#363636] leading-[26px] flex mt-[17px] ">
-                <textarea id="remark" required placeholder="请输入您详细的需求内容" name="remark" rows="6"
+                <textarea id="remark" data-errorMessage="请输入您的需求描述" required placeholder="请输入您详细的需求内容" name="remark"
+                  rows="6"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>

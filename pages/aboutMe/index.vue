@@ -36,7 +36,8 @@ const dwUrl = ref(`url(${dw})`)
           <div class="text-[30px] font-bold text-left text-black">公司介绍</div>
         </div>
 
-        <div class="flex mt-[40px] flex-col   font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center">
+        <div
+          class="flex mt-[40px] flex-col   font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center  indent-8 ">
           <div>
             北京行展软件科技有限公司成立于2016年，总部坐落于北京海淀。公司是北京市中关村高新技术企业，专注于数字信息化建设综合服务领域，在西安、成都、深圳、重庆、济南、武汉、广州、杭州、大庆、宁波等多地设立了分支机构。
           </div>
