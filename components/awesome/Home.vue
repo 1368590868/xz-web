@@ -69,7 +69,7 @@ const swiperImgs = [
         <img loading="lazy" :src="slide.img" class="w-full" :alt="slide.title" />
       </SwiperSlide>
     </Swiper>
-    <div data-aos="fade-up" class="bg-[#F6F7FB] w-full">
+    <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -95,7 +95,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex justify-between max-w-[991px] mt-[69px]">
-          <div>
+          <div data-aos="fade-left">
             <div class="flex align-top mt-[42px]">
               <img loading="lazy" :src="xxfw1" />
               <div class="text-[26px] font-bold text-left text-[#0d63be]">
@@ -112,7 +112,7 @@ const swiperImgs = [
               </div>
             </div>
           </div>
-          <div class="ml-[64px]">
+          <div data-aos="fade-right" class="ml-[64px]">
             <img loading="lazy" :src="xxfw2" height="335px" />
           </div>
         </div>
@@ -120,9 +120,9 @@ const swiperImgs = [
     </div>
 
     <!-- 优势 -->
-    <div data-aos="fade-up" class="bg-[#FBFBFB] w-full">
+    <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Advantage
           </div>
@@ -131,7 +131,7 @@ const swiperImgs = [
           </div>
         </div>
 
-        <div class="flex relative flex-wrap max-w-[1050px] justify-center">
+        <div data-aos="fade-up" class="flex relative flex-wrap max-w-[1050px] justify-center">
           <img loading="lazy" :src="youshi" />
           <div
             class="absolute top-[102px] left-[-236px] w-[294px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
@@ -163,9 +163,9 @@ const swiperImgs = [
       </LayoutPageWrapper>
     </div>
     <!-- 服务成果 -->
-    <div data-aos="fade-up" class="bg-[#FBFBFB] w-full pb-[30px]">
+    <div class="bg-[#FBFBFB] w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[60px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Outcomes
           </div>
@@ -178,9 +178,9 @@ const swiperImgs = [
       </LayoutPageWrapper>
     </div>
     <!-- 服务流程 -->
-    <div data-aos="fade-up" class="bg-[#F6F7FB] w-full">
+    <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[60px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Process
           </div>
@@ -195,7 +195,7 @@ const swiperImgs = [
     <!-- 合作伙伴 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center my-[40px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center my-[40px]">
           <div class="text-[30px] font-bold text-left text-[#000000]">
             合作伙伴
           </div>

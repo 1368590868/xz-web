@@ -67,14 +67,14 @@ const dwUrl = ref(`url(${dw})`)
     <!-- 行展资质 -->
     <div class="bg-[#FBFBFB] mt-[-98px] w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[60px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Aptitude
           </div>
           <div class="text-[30px] font-bold text-left text-black">行展资质</div>
         </div>
 
-        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+        <div data-aos="fade-up" class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
             <img loading="lazy" :src="zs1" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -95,7 +95,7 @@ const dwUrl = ref(`url(${dw})`)
           </div>
         </div>
 
-        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+        <div data-aos="fade-up" class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
           <div class="flex flex-col items-center">
             <img loading="lazy" :src="zs4" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -126,27 +126,27 @@ const dwUrl = ref(`url(${dw})`)
     <!-- 发展历程 -->
     <div class="bg-[#FBFBFB] w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[60px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             History
           </div>
           <div class="text-[30px] font-bold text-left text-black">发展历程</div>
         </div>
-        <img loading="lazy" :src="fzlc" />
+        <img data-aos="fade-up" loading="lazy" :src="fzlc" />
       </LayoutPageWrapper>
     </div>
     <img loading="lazy" :src="jzg" width="100%" />
     <!-- 区域分布 -->
     <div class="bg-[#FBFBFB] relative w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[60px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Distribution
           </div>
           <div class="text-[30px] font-bold text-left text-black">区域分布</div>
         </div>
-        <img loading="lazy" :src="map" />
-        <div
+        <img data-aos="fade-up" loading="lazy" :src="map" />
+        <div data-aos="fade-up"
           class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px]  px-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司

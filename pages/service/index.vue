@@ -83,14 +83,14 @@ function goDetail() {
     <!-- 行展服务 -->
     <div class="bg-[#F6F7FB] w-full h-[564px]">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service
           </div>
           <div class="text-[30px] font-bold text-left text-black">行展服务</div>
         </div>
 
-        <div class="flex flex-wrap w-full">
+        <div data-aos="fade-up" class="flex flex-wrap w-full">
           <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('A')">
             <img loading="lazy" :src="xzfw1" class="w-[44px] h-[44px]" />
@@ -133,7 +133,7 @@ function goDetail() {
         </div>
 
         <div class="flex justify-between items-center mt-[30px] w-full pl-[20%]">
-          <div class="xl:w-[700px] md:w-full   font-normal text-[#0d0d0d] leading-6">
+          <div data-aos="fade-right" class="xl:w-[700px] md:w-full   font-normal text-[#0d0d0d] leading-6">
             <div class="text-[20px] text-blank font-bold mb-[24px] text-center">
               服务范围
             </div>
@@ -146,7 +146,7 @@ function goDetail() {
                 查看详情</span>
             </div>
           </div>
-          <div class="xl:w-[66%]">
+          <div data-aos="fade-left" class="xl:w-[66%]">
             <img loading="lazy" :src="componentImg[currentComponent]" />
           </div>
         </div>
@@ -154,14 +154,14 @@ function goDetail() {
     </div>
 
     <LayoutPageWrapper>
-      <img loading="lazy" :src="szfw1" class="my-[50px]" />
-      <div class="self-start text-[20px] text-[#000000] font-bold mb-[10px]">
+      <img data-aos="fade-up" loading="lazy" :src="szfw1" class="my-[50px]" />
+      <div data-aos="fade-up" class="self-start text-[20px] text-[#000000] font-bold mb-[10px]">
         服务范围
       </div>
-      <div class="indent-8   text-[#0d0d0d] leading-8">
+      <div data-aos="fade-up" class="indent-8   text-[#0d0d0d] leading-8">
         基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。
       </div>
-      <div class="self-start align-middle cursor-pointer my-[30px]" @click="goSzfw()">
+      <div data-aos="fade-up" class="self-start align-middle cursor-pointer my-[30px]" @click="goSzfw()">
         <img loading="lazy" class="inline-block" :src="rightIco" />
         <span class="  font-bold text-[#0d63be]"> 查看详情</span>
       </div>
