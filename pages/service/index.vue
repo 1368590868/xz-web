@@ -19,11 +19,15 @@ import cpjjfw from '~/assets/images/service/cpjjfw.png'
 // compiler micro
 definePageMeta({ layout: 'page' })
 useHead({ title: '行展服务' })
+const router = useRouter()
+
+function goSzfw() {
+  router.push('/szfw')
+}
 
 
 
 const currentComponent = ref('A')
-const router = useRouter()
 function showComponent(component: string) {
   currentComponent.value = component
 }
@@ -157,7 +161,7 @@ function goDetail() {
       <div class="indent-8   text-[#0d0d0d] leading-8">
         基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。
       </div>
-      <div class="self-start align-middle cursor-pointer my-[30px]">
+      <div class="self-start align-middle cursor-pointer my-[30px]" @click="goSzfw()">
         <img loading="lazy" class="inline-block" :src="rightIco" />
         <span class="  font-bold text-[#0d63be]"> 查看详情</span>
       </div>
