@@ -69,7 +69,7 @@ const swiperImgs = [
         <img loading="lazy" :src="slide.img" class="w-full" :alt="slide.title" />
       </SwiperSlide>
     </Swiper>
-    <div class="bg-[#F6F7FB] w-full">
+    <div data-aos="fade-up" class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -120,7 +120,7 @@ const swiperImgs = [
     </div>
 
     <!-- 优势 -->
-    <div class="bg-[#FBFBFB] w-full">
+    <div data-aos="fade-up" class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -163,7 +163,7 @@ const swiperImgs = [
       </LayoutPageWrapper>
     </div>
     <!-- 服务成果 -->
-    <div class="bg-[#FBFBFB] w-full pb-[30px]">
+    <div data-aos="fade-up" class="bg-[#FBFBFB] w-full pb-[30px]">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -173,12 +173,12 @@ const swiperImgs = [
         </div>
 
         <div class="flex relative flex-wrap max-w-[1050px] justify-center pt-[56px]">
-          <img loading="lazy" :src="fwcg" />
+          <img data-aos="fade-up" loading="lazy" :src="fwcg" />
         </div>
       </LayoutPageWrapper>
     </div>
     <!-- 服务流程 -->
-    <div class="bg-[#F6F7FB] w-full">
+    <div data-aos="fade-up" class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center mt-[60px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
@@ -188,7 +188,7 @@ const swiperImgs = [
         </div>
 
         <div class="flex relative flex-wrap max-w-[1050px] justify-center pt-[56px]">
-          <img loading="lazy" :src="fwlc" />
+          <img data-aos="fade-up" loading="lazy" :src="fwlc" />
         </div>
       </LayoutPageWrapper>
     </div>
@@ -211,7 +211,7 @@ const swiperImgs = [
         <!-- <div class="flex flex-wrap gap-4 max-w-[1100px] my-[69px]">
           <img loading="lazy" v-for="(item, i) of Array.from({ length: 20 })" :key="i" :src="c1" />
         </div> -->
-        <img :src="logs" class="mb-[30px]" />
+        <img data-aos="fade-up" :src="logs" class="mb-[30px]" />
       </LayoutPageWrapper>
     </div>
   </div>
