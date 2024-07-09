@@ -148,7 +148,7 @@ const dwUrl = ref(`url(${dw})`)
         </div>
         <img data-aos="fade-up" loading="lazy" :src="map" />
         <div data-aos="fade-up"
-          class="absolute top-[50%] left-[40%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px]  px-[12px]">
+          class="absolute top-[42%] left-[24%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px]  px-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司
           </div>

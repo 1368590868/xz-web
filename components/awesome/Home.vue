@@ -122,7 +122,7 @@ const swiperImgs = [
     <!-- 优势 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[52px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center my-[52px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Advantage
           </div>

@@ -34,7 +34,7 @@ function showComponent(component: string) {
 
 const componentText = {
   A: '行展咨询从顶层战略到业务运营模式规划、技术支撑或引领、一站式解决方案三个方面，为客户提供全面的端到端的咨询服务。',
-  B: '面向企事业单位，提供积极的、完善的、可持续的人力资源生态服务，全方位解决人力资源的名类痛点。',
+  B: '面向企事业单位，提供积极的、完善的、可持续的人力资源生态服务，全方位解决人力资源的各类痛点。',
   C: '产品方案解决服务以常规技术为导向，为客户提供广泛的信息技术服务,如产品设计、软件开发、测试、运行维护等。',
   D: '行展科技提供业务咨询+方案定制+产品研发+项目实施一体化的综合服务，为客户数字化转型全方面赋能。',
 }
@@ -137,7 +137,7 @@ function goDetail() {
             <div class="text-[20px] text-blank font-bold mb-[24px] text-center">
               服务范围
             </div>
-            <div class="mb-[10px] w-[453px]">
+            <div class="mb-[10px] w-[453px] leading-8">
               {{ componentText[currentComponent] }}
             </div>
             <div class="align-middle cursor-pointer" @click="goDetail">
@@ -155,7 +155,7 @@ function goDetail() {
 
     <LayoutPageWrapper>
       <img data-aos="fade-up" loading="lazy" :src="szfw1" class="my-[50px]" />
-      <div data-aos="fade-up" class="self-start text-[20px] text-[#000000] font-bold mb-[10px]">
+      <div data-aos="fade-up" class="self-start text-[20px] text-[#000000] font-bold mb-[10px]   ">
         服务范围
       </div>
       <div data-aos="fade-up" class="indent-8   text-[#0d0d0d] leading-8">

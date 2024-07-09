@@ -67,12 +67,12 @@ useHead({ title: '行业方案咨询服务' })
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div class="flex gap-[20px] justify-between max-w-[1200px] mt-[69px]">
+        <div class="flex gap-[20px] justify-between max-w-[1200px] mt-[69px] ">
           <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
             <div class="text-[20px] text-blank font-bold indent-0 mb-[24px]">
               铁科院多业务板块长期合作
             </div>
-            <div class="mb-[24px]">
+            <div class="mb-[24px] ">
               中国铁道科学研究院集团有限公司(中国铁道科学研究院)始建于1950年，是我国铁路唯一的多学科、多专业的综合性研究机构。2000年开始由事业单位转制为企业单位，目前已发展成为集科技创新、技术服务、成果转化、工程实施等业务为一体的大型高科技企业集团。
             </div>
             <div>
