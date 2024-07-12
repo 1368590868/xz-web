@@ -66,7 +66,7 @@ function validate() {
     <form id="customForm" @submit="submit" action="#" method="post">
       <div class="bg-[#F6F7FB] w-full">
         <LayoutPageWrapper>
-          <div class="flex w-full flex-col items-center mt-[52px]">
+          <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
             <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
               Message online
             </div>
@@ -76,7 +76,7 @@ function validate() {
           </div>
 
           <div class="flex flex-wrap w-full justify-center">
-            <div class="w-[calc(50%-20px)] mr-[20px]">
+            <div class="md:w-[calc(50%-20px)] w-full md:mr-[20px]">
               <div class="flex align-top mt-[42px]">
                 <div class="h-[26px] text-[20px] flex font-bold text-left text-[#0d63be]">
                   <em class="text-red mr-2">*</em>
@@ -91,7 +91,7 @@ function validate() {
               </div>
             </div>
 
-            <div class="w-[calc(50%-20px)] ml-[20px]">
+            <div class="md:w-[calc(50%-20px)] w-full md:ml-[20px]">
               <div class="flex align-top mt-[42px]">
                 <div class="h-[26px] text-[20px] flex font-bold text-left text-[#0d63be]">
                   <em class="text-red mr-2">*</em><label for="phone"
@@ -104,7 +104,7 @@ function validate() {
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
-            <div class="w-[calc(50%-20px)] mr-[20px]">
+            <div class="md:w-[calc(50%-20px)] w-full md:mr-[20px]">
               <div class="flex align-top mt-[42px]">
                 <div class="h-[26px] text-[20px] flex font-bold text-left text-[#0d63be]">
                   <em class="text-red mr-2">*</em>
@@ -117,7 +117,7 @@ function validate() {
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6" />
               </div>
             </div>
-            <div class="w-[calc(50%-20px)] ml-[20px]">
+            <div class="md:w-[calc(50%-20px)] w-full md:ml-[20px]">
               <div class="flex align-top mt-[42px]">
                 <div class="h-[26px] text-[20px] font-bold text-left text-[#0d63be]">
                   <label for="job" class="block text-sm font-medium leading-6 text-gray-900">您的职位</label>

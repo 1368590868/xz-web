@@ -13,6 +13,8 @@ import banner1 from '~/assets/images/home/banner1.png'
 import banner2 from '~/assets/images/home/banner2.png'
 import banner3 from '~/assets/images/home/banner3.jpg'
 
+const $screen = useAwesomeScreen()
+
 const serviceText = [
   {
     title: '行业方案咨询服务',
@@ -71,17 +73,18 @@ const swiperImgs = [
     </Swiper>
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
-          <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] text-[30px]  ">
+          <div class=" font-normal text-left text-[#b4b4b4]">
             Our Serivers
           </div>
-          <div class="text-[30px] font-bold text-left text-black">
+          <div class=" font-bold text-left text-black">
             我们的服务
           </div>
         </div>
 
         <div class="flex flex-wrap max-w-[1050px] justify-center">
-          <div v-for="(item, index) of serviceText" :class="index % 2 === 0 ? 'basis-3/5' : 'basis-2/5'">
+          <div v-for="(item, index) of serviceText" class="basis-full"
+            :class="index % 2 === 0 ? 'md:basis-3/5' : 'md:basis-2/5'">
             <div class="flex align-top mt-[42px]">
               <img loading="lazy" :src="item.pic" />
               <div class="h-[26px] text-[20px] font-bold text-left text-[#0d63be]">
@@ -94,7 +97,7 @@ const swiperImgs = [
           </div>
         </div>
 
-        <div class="flex justify-between max-w-[991px] mt-[69px]">
+        <div class="flex md:justify-between  flex-col-reverse  max-w-[991px] md:mt-[69px] mt-[30px]">
           <div data-aos="fade-left">
             <div class="flex align-top mt-[42px]">
               <img loading="lazy" :src="xxfw1" />
@@ -122,7 +125,7 @@ const swiperImgs = [
     <!-- 优势 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center my-[52px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center md:my-[52px] my-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Advantage
           </div>
@@ -133,29 +136,29 @@ const swiperImgs = [
 
         <div data-aos="fade-up" class="flex relative flex-wrap max-w-[1050px] justify-center">
           <img loading="lazy" :src="youshi" />
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[102px] left-[-236px] w-[294px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             五千余真实案例积累支撑，和几十家大型央国企长期合作，成熟的解决方案，合作方案多样化，交付有保障。
           </div>
 
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[286px] left-[-310px] w-[313px] h-[91px]   font-normal text-left text-[#959595] leading-[24px">
             通过CMMI3、IS09001、IS020000、IS027001专业认证;自研开发平台;有云计算、大数据、A1、移动互联、物联网、安全可信、区块链5G等创新数字技术实践能力。
           </div>
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[486px] left-[-210px] w-[225px] h-[91px]   font-normal text-left text-[#959595] leading-[24px">
             1000+专业研发团队，核心人员拥有10年以上工作经验，3年以上经验技术研发人员占90%，资深项目经理高效管控项目各个环节。
           </div>
           <!-- right -->
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[102px] left-[600px] w-[310px] h-[43px]   font-normal text-left text-[#959595] leading-[24px">
             超10个分布全国主要区域的子公司，本地化服务，7X24小时为客户提供面对面的优质响应。
           </div>
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[286px] left-[650px] w-[262px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             行展科技提供业务咨询+方案定制+产品研发+项目实施一体化的综合服务，为客户数字化转型全方面赋能。
           </div>
-          <div
+          <div v-if="$screen.higherThan('md', $screen.current.value)"
             class="absolute top-[486px] left-[600px] w-[308px] h-[67px]   font-normal text-left text-[#959595] leading-[24px">
             专门的AI技术团队，向企业提供大模型连接服务，一站式行业训练平台，帮助企业快速构建专业级AI产品，紧跟人工智能时代步伐。
           </div>

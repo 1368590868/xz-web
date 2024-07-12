@@ -6,8 +6,6 @@ import banner from '~/assets/images/szfw/banner.jpg'
 import dp from '~/assets/images/szfw/dp.png'
 import left1 from '~/assets/images/szfw/left1.png'
 
-import ljxz from '~/assets/images/service/ljxz.png'
-import szfw1 from '~/assets/images/service/szfw1.png'
 // compiler micro
 definePageMeta({ layout: 'page' })
 useHead({ title: '数智服务' })
@@ -21,18 +19,18 @@ useHead({ title: '数智服务' })
     <!-- 了解行展 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Content
           </div>
           <div class="text-[30px] font-bold text-left text-black">服务范围</div>
         </div>
 
-        <div class="flex gap-[54px] justify-between items-center max-w-[991px] my-[50px]">
-          <div>
-            <img loading="lazy" :src="left1" />
+        <div class="flex md:gap-[54px] md:flex-row flex-col justify-between items-center md:max-w-[991px] md:my-[50px]">
+          <div class="flex justify-center">
+            <img loading="lazy" :src="left1" class="md:w-full w-[50%]" />
           </div>
-          <div class="w-[616px] h-[147px]   font-normal text-[#0d0d0d] leading-8 indent-8">
+          <div class="md:w-[616px] md:h-[147px] md:mt-0 mt-[20px]   font-normal text-[#0d0d0d] leading-8 indent-8">
             <span>
               基于多种AIGC开源大模型结合行展科技大模型技术，提供多种场景的AI大模型应用解决方案，可支持公有云及私有化部署。在包括专业模型训练、文本创作、音视频创作、内容问答，等方面提供服务。基于大模型的智能服务、文本对话机器人、语音智控、公文写作、文案润色、智能客服等企业级办公应用，创新提效的解决方案。</span>
           </div>
@@ -42,7 +40,7 @@ useHead({ title: '数智服务' })
     </div>
 
 
-    <div class="flex w-full flex-col items-center mt-[52px]">
+    <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
       <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
         Cooperation Case
       </div>

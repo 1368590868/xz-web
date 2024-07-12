@@ -26,9 +26,10 @@ const showDrawer = ref(false)
         <slot name="title">
           <NuxtLink to="/">
             <div class="flex justify-center items-center gap-[8px]">
-              <img loading="lazy" :src="logo" alt="logo" class="w-[285px]" />
+              <img loading="lazy" :src="logo" alt="logo" class=" w-[100px] md:w-[285px]" />
 
-              <div class="flex flex-col text-white text-[18px] font-normal pl-[8px]">
+              <div v-if="$screen.higherThan('md', $screen.current.value)"
+                class="flex flex-col text-white text-[18px] font-normal pl-[8px]  ">
                 <span>行展科技</span>
                 <span>服务致远</span>
               </div>
@@ -61,8 +62,7 @@ const showDrawer = ref(false)
       <!-- drawer:btn -->
       <div v-else class="flex space-x-4 items-center" :class="{ 'divide-x divide-gray-500': menus.length > 0 }">
         <div class="pl-4 flex space-x-3 text-xl">
-          <AwesomeLink v-if="awesome?.project?.links?.github" class="text-gray-400 hover:text-gray-100"
-            @click.prevent="() => (showDrawer = !showDrawer)">
+          <AwesomeLink class="text-gray-400 hover:text-gray-100" @click.prevent="() => (showDrawer = !showDrawer)">
             <Icon name="heroicons:bars-3-bottom-right-20-solid" />
           </AwesomeLink>
         </div>
@@ -74,7 +74,7 @@ const showDrawer = ref(false)
       @close="() => (showDrawer = false)">
       <AwesomeActionSheetGroup>
         <AwesomeActionSheetHeader>
-          <AwesomeActionSheetHeaderTitle text="Menu" />
+          <AwesomeActionSheetHeaderTitle text="全部菜单" />
         </AwesomeActionSheetHeader>
         <!-- dynamic menus -->
         <AwesomeActionSheetItem>
@@ -128,21 +128,21 @@ const showDrawer = ref(false)
             </template>
           </div>
         </AwesomeActionSheetItem>
-        <AwesomeActionSheetItem class="flex flex-col">
+        <!-- <AwesomeActionSheetItem class="flex flex-col">
           <div class="pb-2">
             <div class="mt-2 mb-2 text-sm font-bold capitalize">
               Change Theme
             </div>
             <LayoutPageNavbarDropdownThemeSwitcher type="select-box" />
           </div>
-        </AwesomeActionSheetItem>
+        </AwesomeActionSheetItem> -->
       </AwesomeActionSheetGroup>
-      <AwesomeActionSheetGroup>
+      <!-- <AwesomeActionSheetGroup>
         <AwesomeActionSheetItemButton class="flex justify-center items-center text-base space-x-2">
           <Icon name="mdi:github-face" class="text-lg font-bold" />
           <span class="text-sm">Github</span>
         </AwesomeActionSheetItemButton>
-      </AwesomeActionSheetGroup>
+      </AwesomeActionSheetGroup> -->
     </AwesomeActionSheet>
   </header>
 </template>

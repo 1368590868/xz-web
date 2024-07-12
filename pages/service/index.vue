@@ -62,15 +62,16 @@ function goDetail() {
     <!-- 了解行展 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Development
           </div>
           <div class="text-[30px] font-bold text-left text-black">了解行展</div>
         </div>
 
-        <div class="flex gap-[54px] justify-between items-center max-w-[991px] my-[50px]">
-          <div class="w-[616px] h-[147px]   font-normal text-[#0d0d0d] leading-8 indent-8">
+        <div
+          class="flex md:gap-[54px] md:flex-row md:justify-between flex-col-reverse items-center max-w-[991px] my-[50px]">
+          <div class="md:w-[616px] md:h-[147px] md:mt-0 mt-[20px]   font-normal text-[#0d0d0d] leading-8 indent-8">
             <span>
               社会生产力日新月异的今天，模式不断被改变和替换，企业经营者需要保持清晰、准确的视角，来做出决策和改变。行展科技作为一家科技类综合服务商，紧跟市场发展变化，通过数字技术手段，将传统服务转化为数智化形式的服务，将服务过程、服务内容、服务形式数字化自动化，为企业获取更多商业机会和利润提供专业服务。</span>
           </div>
@@ -81,9 +82,9 @@ function goDetail() {
       </LayoutPageWrapper>
     </div>
     <!-- 行展服务 -->
-    <div class="bg-[#F6F7FB] w-full h-[564px]">
+    <div class="bg-[#F6F7FB] w-full md:h-[564px]">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[52px]">
+        <div data-aos="fade-up" class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service
           </div>
@@ -91,7 +92,7 @@ function goDetail() {
         </div>
 
         <div data-aos="fade-up" class="flex flex-wrap w-full">
-          <div class="flex flex-col items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
+          <div class="flex flex-col  items-center basis-1/2 mt-6 md:basis-1/4 cursor-pointer"
             @click="showComponent('A')">
             <img loading="lazy" :src="xzfw1" class="w-[44px] h-[44px]" />
             <div :class="currentComponent === 'A' ? 'text-[#0D63BE]' : 'text-[#212121]'
@@ -132,22 +133,22 @@ function goDetail() {
           </div>
         </div>
 
-        <div class="flex justify-between items-center mt-[30px] w-full pl-[20%]">
+        <div class="flex md:justify-between md:flex-row flex-col items-center mt-[30px] w-full md:pl-[20%]">
           <div data-aos="fade-right" class="xl:w-[700px] md:w-full   font-normal text-[#0d0d0d] leading-6">
             <div class="text-[20px] text-blank font-bold mb-[24px] text-center">
               服务范围
             </div>
-            <div class="mb-[10px] w-[453px] leading-8">
+            <div class="md:mb-[10px] md:w-[453px] leading-8">
               {{ componentText[currentComponent] }}
             </div>
             <div class="align-middle cursor-pointer" @click="goDetail">
-              <img loading="lazy" class="inline-block" :src="rightIco" />
+              <img loading="lazy" class="inline-block " :src="rightIco" />
               <span class="  font-bold text-[#0d63be]">
                 查看详情</span>
             </div>
           </div>
           <div data-aos="fade-left" class="xl:w-[66%]">
-            <img loading="lazy" :src="componentImg[currentComponent]" />
+            <img class="md:h-full h-[100px] mb-[20px] md:mb-0 " loading="lazy" :src="componentImg[currentComponent]" />
           </div>
         </div>
       </LayoutPageWrapper>

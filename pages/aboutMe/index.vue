@@ -20,6 +20,7 @@ import zs7 from '~/assets/images/about/zs7.png'
 
 const gsjsUrl = ref(`url(${gsjs})`)
 const dwUrl = ref(`url(${dw})`)
+const $screen = useAwesomeScreen()
 </script>
 
 <template>
@@ -29,7 +30,7 @@ const dwUrl = ref(`url(${dw})`)
     <div class="h-[780px] w-full gsjs">
       <!--  <img loading="lazy"class="w-full absolute left-0 top-0" alt="公司介绍" :src="gsjs"> -->
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Aptitude
           </div>
@@ -46,21 +47,21 @@ const dwUrl = ref(`url(${dw})`)
           </div>
         </div>
 
-        <div class="flex gap-[60%] mt-[68px] justify-center">
+        <div class="flex md:gap-[60%] gap-6 mt-[68px] justify-center md:text-[37px] text-[24px]">
           <div>
-            <div class="text-[37px] text-[#0D63BE]">1000+</div>
+            <div class=" text-[#0D63BE]">1000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
             <div class="text-[16px] text-[#000000] font-normal">专业人员</div>
           </div>
           <div>
-            <div class="text-[37px] text-[#0D63BE]">5000+</div>
+            <div class=" text-[#0D63BE]">5000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
-            <div>服务企业</div>
+            <div class="text-[16px]">服务企业</div>
           </div>
           <div>
-            <div class="text-[37px] text-[#0D63BE]">500,000+</div>
+            <div class=" text-[#0D63BE]">500,000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
-            <div>人才资料库</div>
+            <div class="text-[16px]">人才资料库</div>
           </div>
         </div>
       </LayoutPageWrapper>
@@ -75,20 +76,20 @@ const dwUrl = ref(`url(${dw})`)
           <div class="text-[30px] font-bold text-left text-black">行展资质</div>
         </div>
 
-        <div data-aos="fade-up" class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
-          <div class="flex flex-col items-center">
+        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs1" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               中关村高新技术企业
             </div>
           </div>
-          <div class="flex flex-col items-center">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs2" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               ISACA认证高新技术企业
             </div>
           </div>
-          <div class="flex flex-col items-center">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs3" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               人力资源许可证
@@ -96,26 +97,26 @@ const dwUrl = ref(`url(${dw})`)
           </div>
         </div>
 
-        <div data-aos="fade-up" class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
-          <div class="flex flex-col items-center">
+        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs4" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               信息技术服务管理认证证书
             </div>
           </div>
-          <div class="flex flex-col items-center">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs5" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               质量管理体系认证证书
             </div>
           </div>
-          <div class="flex flex-col items-center">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs6" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               计算机软件著作权登记证书
             </div>
           </div>
-          <div class="flex flex-col items-center">
+          <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs7" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
               信息安全管理体系认证证书
@@ -136,7 +137,7 @@ const dwUrl = ref(`url(${dw})`)
         <img data-aos="fade-up" loading="lazy" :src="fzlc" />
       </LayoutPageWrapper>
     </div>
-    <img loading="lazy" :src="jzg" width="100%" />
+    <img data-aos="fade-up" loading="lazy" :src="jzg" width="100%" />
     <!-- 区域分布 -->
     <div class="bg-[#FBFBFB] relative w-full pb-[30px]">
       <LayoutPageWrapper>
@@ -147,8 +148,8 @@ const dwUrl = ref(`url(${dw})`)
           <div class="text-[30px] font-bold text-left text-black">区域分布</div>
         </div>
         <img data-aos="fade-up" loading="lazy" :src="map" />
-        <div data-aos="fade-up"
-          class="absolute top-[42%] left-[24%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px]  px-[12px]">
+        <div data-aos="fade-up" v-if="$screen.higherThan('md', $screen.current.value)"
+          class=" absolute top-[42%] left-[24%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] px-[12px]">
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司
           </div>

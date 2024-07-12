@@ -17,18 +17,18 @@ useHead({ title: '行业方案咨询服务' })
     <!-- 服务范围 -->
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Content
           </div>
           <div class="text-[30px] font-bold text-left text-black">服务范围</div>
         </div>
 
-        <div class="flex gap-[54px] justify-between items-center max-w-[991px]">
-          <div>
-            <img loading="lazy" :src="left1" />
+        <div class="flex md:gap-[54px] md:flex-row flex-col-reverse  justify-between items-center md:max-w-[991px]">
+          <div class="flex justify-center md:mt-0 mt-[20px]">
+            <img loading="lazy" class="md:w-full w-[50%]" :src="left1" />
           </div>
-          <div class="w-[567px] h-[147px]   font-normal text-[#0d0d0d] leading-8 indent-8">
+          <div class="md:w-[567px] md:h-[147px]   font-normal text-[#0d0d0d] leading-8 indent-8">
             <span>
               行展科技行业方案咨询服务团队包含100+各行业资深专家，从事行业平均经验超过10年,聚焦行业的全面的咨询体系。数字化时代下，基于对国内市场和数字化的深入了解和积淀，紧抓数字化机遇，注重创新和可持续发展，以前瞻性眼光布局数字化咨询服务发展战略，致力于帮助企事业单位解决管理经营以及与数字化相关的重要问题，为企业提供专业咨询服务。</span>
           </div>
@@ -38,19 +38,19 @@ useHead({ title: '行业方案咨询服务' })
     <!-- 服务内容 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px] mb-[40px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Content
           </div>
           <div class="text-[30px] font-bold text-left text-black">服务内容</div>
         </div>
 
-        <div class="flex flex-col gap-[54px] justify-between items-center max-w-[991px]">
-          <div>
-            <img loading="lazy" :src="left2" />
+        <div class="flex  md:flex-col flex-col-reverse  md:gap-[54px] justify-between items-center md:max-w-[991px]">
+          <div class="flex justify-center">
+            <img loading="lazy" class="md:w-full w-[50%] md:mt-0 mt-[20px]" :src="left2" />
           </div>
           <div class="  font-normal text-[#0d0d0d]">
-            <div class="w-[762px] text-center leading-8">
+            <div class="md:w-[762px] text-center leading-8">
               包含战略咨询、商业模式规划、产业模式规划、企业业务流程设计/优化、集成产品研发、技术方案、企业人力资源、品牌、IPMS、财经、市场营销、供应链等数字化转型规划咨询。
             </div>
           </div>
@@ -60,16 +60,16 @@ useHead({ title: '行业方案咨询服务' })
     <!-- 合作案例 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Cooperation Case
           </div>
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div class="flex gap-[20px] justify-between max-w-[1200px] mt-[69px] ">
-          <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
-            <div class="text-[20px] text-blank font-bold indent-0 mb-[24px]">
+        <div class="flex md:flex-row flex-col gap-[20px] justify-between md:max-w-[1200px] md:mt-[69px] ">
+          <div class="md:w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
+            <div class="text-[20px] md:text-left text-center text-blank font-bold indent-0 mb-[24px] md:mt-0 mt-[20px]">
               铁科院多业务板块长期合作
             </div>
             <div class="mb-[24px] ">
@@ -83,8 +83,8 @@ useHead({ title: '行业方案咨询服务' })
             <img loading="lazy" :src="rightLogo" :height="308" />
           </div>
         </div>
-        <div class="max-w-[1200px] mb-[50px]">
-          <div class="text-[26px] text-black font-bold">合作业务板块</div>
+        <div class="md:max-w-[1200px] mb-[50px] md:mt-0 mt-[20px]">
+          <div class="text-[26px] text-black font-bold md:text-left text-center">合作业务板块</div>
           <div class="  text-[#0d0d0d] font-normal mt-[20px]">
             拥有6年+合作时间，16个合作业务板块(城轨装备及信息服务、工程、机电、移动设备、IT基础设施及运维、北斗、供应链、财务、大数据、基础研发、人力资源管理、数据分析与决策、协同办公、ERP、质量管理、综合等)
           </div>

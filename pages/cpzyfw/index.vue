@@ -18,19 +18,19 @@ useHead({ title: '产品解决方案服务' })
     <!-- 服务内容 -->
     <div class="bg-[#F6F7FB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Cooperation Case
           </div>
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div class="flex gap-[40px] justify-between items-center max-w-[1200px] mt-[69px]">
+        <div class="flex gap-[40px] justify-between items-center max-w-[1200px] md:mt-[69px] mt-[20px]">
           <div>
             <img loading="lazy" :src="left1" />
           </div>
-          <div class="w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
-            <div class="leading-8 w-[477px]">
+          <div class="md:w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
+            <div class="leading-8 md:w-[477px]">
               产品解决方案服务以常规技术为导向，为客户提供广泛的信息技术服务，如项目方案设计、软件开发、测试、运行维护等。
             </div>
             <div class="mb-[24px] w-[477px] leading-8">
@@ -43,7 +43,7 @@ useHead({ title: '产品解决方案服务' })
     <!-- 服务范围 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px] mb-[40px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Service Content
           </div>
@@ -62,7 +62,7 @@ useHead({ title: '产品解决方案服务' })
     <div class="bg-[#FBFBFB] w-full">
       <!-- 合作案例 -->
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center mt-[52px] mb-[40px]">
+        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
             Cooperation Case
           </div>
@@ -72,7 +72,7 @@ useHead({ title: '产品解决方案服务' })
           <img loading="lazy" :src="left3" />
         </div>
         <div class="xl:max-w-[1225px] my-[50px] ">
-          <div class="text-[20px] text-[#000000] font-bold ">
+          <div class="text-[20px] text-[#000000] font-bold md:text-left text-center ">
             人寿保险操作风险管理系统
 
           </div>
