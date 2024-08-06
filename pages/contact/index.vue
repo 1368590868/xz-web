@@ -69,7 +69,7 @@ function validate() {
         <LayoutPageWrapper>
           <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
             <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-              Message online
+              <!-- Message online -->
             </div>
             <div class="text-[30px] font-bold text-left text-black">
               在线留言

@@ -32,13 +32,14 @@ const $screen = useAwesomeScreen()
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Aptitude
+            <!-- Aptitude -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">公司介绍</div>
         </div>
 
         <div
-          class="flex mt-[40px] flex-col   font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center  indent-8 ">
+          class="flex mt-[40px] flex-col font-normal text-[#0d0d0d] gap-[24px] max-w-[1050px] justify-center indent-8"
+        >
           <div>
             北京行展软件科技有限公司成立于2016年，总部坐落于北京海淀。公司是北京市中关村高新技术企业，专注于数字信息化建设综合服务领域，在西安、成都、深圳、重庆、济南、武汉、广州、杭州、大庆、宁波等多地设立了分支机构。
           </div>
@@ -47,19 +48,21 @@ const $screen = useAwesomeScreen()
           </div>
         </div>
 
-        <div class="flex md:gap-[60%] gap-6 mt-[68px] justify-center md:text-[37px] text-[24px]">
+        <div
+          class="flex md:gap-[60%] gap-6 mt-[68px] justify-center md:text-[37px] text-[24px]"
+        >
           <div>
-            <div class=" text-[#0D63BE]">1000+</div>
+            <div class="text-[#0D63BE]">1000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
             <div class="text-[16px] text-[#000000] font-normal">专业人员</div>
           </div>
           <div>
-            <div class=" text-[#0D63BE]">5000+</div>
+            <div class="text-[#0D63BE]">5000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
             <div class="text-[16px]">服务企业</div>
           </div>
           <div>
-            <div class=" text-[#0D63BE]">500,000+</div>
+            <div class="text-[#0D63BE]">500,000+</div>
             <div class="h-[2px] w-[63px] bg-[#0D63BE] mb-[10px]"></div>
             <div class="text-[16px]">人才资料库</div>
           </div>
@@ -69,14 +72,19 @@ const $screen = useAwesomeScreen()
     <!-- 行展资质 -->
     <div class="bg-[#FBFBFB] mt-[-98px] w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
+        <div
+          data-aos="fade-up"
+          class="flex w-full flex-col items-center mt-[60px]"
+        >
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Aptitude
+            <!-- Aptitude -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">行展资质</div>
         </div>
 
-        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+        <div
+          class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]"
+        >
           <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs1" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -97,7 +105,9 @@ const $screen = useAwesomeScreen()
           </div>
         </div>
 
-        <div class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]">
+        <div
+          class="flex gap-[28px] flex-wrap max-w-[1220px] justify-center pt-[56px]"
+        >
           <div data-aos="fade-up" class="flex flex-col items-center">
             <img loading="lazy" :src="zs4" />
             <div class="text-[16px] text-[#363636] font-normal mt-[19px]">
@@ -128,9 +138,12 @@ const $screen = useAwesomeScreen()
     <!-- 发展历程 -->
     <div class="bg-[#FBFBFB] w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
+        <div
+          data-aos="fade-up"
+          class="flex w-full flex-col items-center mt-[60px]"
+        >
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            History
+            <!-- History -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">发展历程</div>
         </div>
@@ -141,15 +154,21 @@ const $screen = useAwesomeScreen()
     <!-- 区域分布 -->
     <div class="bg-[#FBFBFB] relative w-full pb-[30px]">
       <LayoutPageWrapper>
-        <div data-aos="fade-up" class="flex w-full flex-col items-center mt-[60px]">
+        <div
+          data-aos="fade-up"
+          class="flex w-full flex-col items-center mt-[60px]"
+        >
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Distribution
+            <!-- Distribution -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">区域分布</div>
         </div>
         <img data-aos="fade-up" loading="lazy" :src="map" />
-        <div data-aos="fade-up" v-if="$screen.higherThan('md', $screen.current.value)"
-          class=" absolute top-[42%] left-[24%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] px-[12px]">
+        <div
+          data-aos="fade-up"
+          v-if="$screen.higherThan('md', $screen.current.value)"
+          class="absolute top-[42%] left-[24%] translate-x-[-160px] h-[197px] w-[262px] bg-white py-[23px] px-[12px]"
+        >
           <div class="text-[16px] font-normal text-[#363636]">
             北京行展软件科技有限公司
           </div>

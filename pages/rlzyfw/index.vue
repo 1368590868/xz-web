@@ -19,7 +19,7 @@ useHead({ title: '人力资源服务' })
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Service Content
+            <!-- Service Content -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">服务内容</div>
         </div>
@@ -32,9 +32,11 @@ useHead({ title: '人力资源服务' })
     <!-- 六大服务特色 -->
     <div class="bg-[#FBFBFB] w-full">
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]">
+        <div
+          class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]"
+        >
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Service Features
+            <!-- Service Features -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">
             六大服务特色
@@ -48,9 +50,11 @@ useHead({ title: '人力资源服务' })
     <div class="bg-[#FBFBFB] w-full">
       <!-- 人力资源服务流程 -->
       <LayoutPageWrapper>
-        <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]">
+        <div
+          class="flex w-full flex-col items-center md:mt-[52px] mt-[20px] md:mb-[40px] mb-[20px]"
+        >
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Service Features
+            <!-- Service Features -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">
             人力资源服务流程
@@ -66,17 +70,23 @@ useHead({ title: '人力资源服务' })
       <LayoutPageWrapper>
         <div class="flex w-full flex-col items-center md:mt-[52px] mt-[20px]">
           <div class="text-[30px] font-normal text-left text-[#b4b4b4]">
-            Cooperation Case
+            <!-- Cooperation Case -->
           </div>
           <div class="text-[30px] font-bold text-left text-black">合作案例</div>
         </div>
 
-        <div class="flex md:gap-[40px] md:flex-row  flex-col justify-between items-center md:max-w-[1200px] mt-[69px]">
+        <div
+          class="flex md:gap-[40px] md:flex-row flex-col justify-between items-center md:max-w-[1200px] mt-[69px]"
+        >
           <div>
             <img loading="lazy" :src="left5" :height="308" />
           </div>
-          <div class="md:w-[537px]   font-normal text-[#0d0d0d] leading-6 indent-8">
-            <div class="text-[20px] md:text-left text-center text-blank font-bold indent-0 mb-[24px] md:mt-0 mt-[20px]">
+          <div
+            class="md:w-[537px] font-normal text-[#0d0d0d] leading-6 indent-8"
+          >
+            <div
+              class="text-[20px] md:text-left text-center text-blank font-bold indent-0 mb-[24px] md:mt-0 mt-[20px]"
+            >
               阳光保险长期合作
             </div>
             <div class="mb-[24px]">
@@ -86,8 +96,12 @@ useHead({ title: '人力资源服务' })
           </div>
         </div>
         <div class="xl:min-w-[1200px] my-[50px]">
-          <div class="text-[26px] text-black font-bold md:text-left text-center">合作岗位</div>
-          <div class="  text-[#0d0d0d] font-normal mt-[20px]">
+          <div
+            class="text-[26px] text-black font-bold md:text-left text-center"
+          >
+            合作岗位
+          </div>
+          <div class="text-[#0d0d0d] font-normal mt-[20px]">
             高级测试工程师、中级测试工程师、初级测试工程师、高级JAVA工程师、中级JAVA工程师、初级JAVA工程师、IOS高级、IOS中级、IOS初级、安卓高级、安卓中级、安卓初级
           </div>
         </div>
