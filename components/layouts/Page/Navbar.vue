@@ -46,12 +46,15 @@ const showDrawer = ref(false)
         </slot>
       </div>
       <!-- menus -->
+      <!-- v-if="$screen.higherThan('md', $screen.current.value)" -->
       <div
-        v-if="$screen.higherThan('md', $screen.current.value)"
-        class="flex gap-[17px] space-x-4 items-end"
+        class="flex md:gap-[17px] gap-[2px] md:space-x-4 items-end md:w-auto w-[300px]"
         :class="{ ' divide-gray-500': menus.length > 0 }"
       >
-        <div class="flex space-x-4 text-sm items-center">
+        <div
+          class="flex space-x-4 md:text-sm md:scale-[1] scale-[0.7] text-[10px] items-center"
+          style="text-wrap: nowrap"
+        >
           <!-- dynamic menus -->
           <template v-for="(item, i) in menus" :key="i">
             <LayoutPageNavbarMenuWrapper :menu="item" />
@@ -71,7 +74,7 @@ const showDrawer = ref(false)
         <!-- others -->
       </div>
       <!-- drawer:btn -->
-      <div
+      <!-- <div
         v-else
         class="flex space-x-4 items-center"
         :class="{ 'divide-x divide-gray-500': menus.length > 0 }"
@@ -84,7 +87,7 @@ const showDrawer = ref(false)
             <Icon name="heroicons:bars-3-bottom-right-20-solid" />
           </AwesomeLink>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- misc -->
     <!-- drawer -->
