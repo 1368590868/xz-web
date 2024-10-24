@@ -29,6 +29,12 @@ export default defineNuxtConfig({
             '北京行展软件科技有限公司成立于2016年，总部坐落于北京海淀。公司是北京市中关村高新技术企业，专注于数字信息化建设综合服务领域，在西安、成都、深圳、重庆、济南、武汉、广州、杭州、大庆、宁波等多地设立了分支机构。',
         },
       ],
+      script: [
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js',
+          defer: true, // 确保脚本在页面内容加载完成后执行
+        },
+      ],
     },
   },
 

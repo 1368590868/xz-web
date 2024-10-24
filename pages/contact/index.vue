@@ -17,6 +17,20 @@ function openModal(val: boolean) {
   isTrue.value = val
 }
 
+// 构造加密函数（AES/ECB/PKCS5Padding）
+function encryptData(data: any) {
+  // AES密钥（Base64解码后的字节）
+  const AES_KEY_BASE64 = '2fpTaFdDROVqirTjXGllag==' // 与后端一致
+  const AES_KEY = CryptoJS.enc.Base64.parse(AES_KEY_BASE64)
+  const jsonString = JSON.stringify(data) // 将数据转为JSON字符串
+  const encrypted = CryptoJS.AES.encrypt(jsonString, AES_KEY, {
+    mode: CryptoJS.mode.ECB,
+    padding: CryptoJS.pad.Pkcs7,
+  })
+
+  return encrypted.toString() // 返回Base64编码的加密数据
+}
+
 function submit(e: any) {
   e.preventDefault()
   const formData = new FormData(e.target)
@@ -25,13 +39,19 @@ function submit(e: any) {
     data[key] = value
   })
 
-  fetch(`${api}/khjbxx/add`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
+  fetch(
+    `https://eip.longgrid.com/api/wb/dataTemplate/v1/boSave/xzgw/xzgw?tenantId=1816368077970661376&delDraftId=`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        jca: encryptData({ ...data, sjly: '行展官网' }),
+        xzgw: { ...data, sjly: '行展官网' },
+      }),
     },
-    body: JSON.stringify(data),
-  })
+  )
     .then((data) => {
       console.log('Success:', data)
       if (data.status !== 404) {
@@ -99,9 +119,9 @@ function validate() {
                   required
                   placeholder="请输入您的名称（称呼）"
                   type="text"
-                  name="customerName"
-                  :oninvalid="(e: any) => e.setCustomValidity('Witinnovation')"
-                  :onvalid="(e: any) => e.setCustomValidity('')"
+                  name="khmc"
+                  @oninvalid="(e: any) => e.setCustomValidity('Witinnovation')"
+                  @onvalid="(e: any) => e.setCustomValidity('')"
                   autocomplete="given-name"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6"
                 />
@@ -129,8 +149,8 @@ function validate() {
                   data-errorMessage="请输入您的手机号码"
                   required
                   placeholder="+86"
-                  type="text"
-                  name="customerPhone"
+                  type="tel"
+                  name="khdh"
                   autocomplete="tel-extension"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6"
                 />
@@ -158,7 +178,7 @@ function validate() {
                   required
                   placeholder="请输入您公司名字"
                   type="text"
-                  name="companyName"
+                  name="gsmc"
                   autocomplete="off"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6"
                 />
@@ -183,7 +203,7 @@ function validate() {
                   id="job"
                   placeholder="请输入您职位"
                   type="text"
-                  name="jobTitle"
+                  name="zw"
                   autocomplete="off"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6"
                 />
@@ -210,7 +230,7 @@ function validate() {
                   data-errorMessage="请输入您的需求描述"
                   required
                   placeholder="请输入您详细的需求内容"
-                  name="remark"
+                  name="khms"
                   rows="6"
                   class="placeholder-custom px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 sm:text-sm sm:leading-6"
                 />

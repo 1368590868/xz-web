@@ -13,3 +13,11 @@ export interface AwesomeLayoutPageNavbarMenu {
   to?: RouteLocationRaw | ((nuxt: NuxtApp) => RouteLocationRaw)
   children?: AwesomeLayoutPageNavbarMenuDropdownItem[]
 }
+
+declare global {
+  interface Window {
+    CryptoJS: any
+  }
+
+  const CryptoJS: any
+}
